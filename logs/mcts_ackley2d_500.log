@@ -1,0 +1,127 @@
+2024-01-12 21:46:56,096 - INFO - [8 in node 1] Best value: -13.036 | TR length: 0.800 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:46:56,351 - INFO - [12 in node 1] Best value: -11.568 | TR length: 0.800 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:46:56,688 - INFO - [16 in node 1] Best value: -10.249 | TR length: 0.800 | num. failures: 0/1 | num. successes: 3/10
+2024-01-12 21:46:57,221 - INFO - [20 in node 1] Best value: -5.087 | TR length: 0.800 | num. failures: 0/1 | num. successes: 4/10
+2024-01-12 21:46:57,523 - INFO - [24 in node 1] Best value: -3.101 | TR length: 0.800 | num. failures: 0/1 | num. successes: 5/10
+2024-01-12 21:46:58,368 - INFO - [28 in node 1] Best value: -3.101 | TR length: 0.400 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:46:58,843 - INFO - [32 in node 1] Best value: -3.101 | TR length: 0.200 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:46:59,592 - INFO - [36 in node 1] Best value: -2.241 | TR length: 0.200 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:00,031 - INFO - [40 in node 1] Best value: -1.254 | TR length: 0.200 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:00,608 - INFO - [44 in node 1] Best value: -1.254 | TR length: 0.100 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:01,381 - INFO - [48 in node 1] Best value: -1.254 | TR length: 0.050 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:02,159 - INFO - [52 in node 1] Best value: -0.047 | TR length: 0.050 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:02,551 - INFO - [56 in node 1] Best value: -0.035 | TR length: 0.050 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:02,970 - INFO - [60 in node 1] Best value: -0.031 | TR length: 0.050 | num. failures: 0/1 | num. successes: 3/10
+2024-01-12 21:47:03,392 - INFO - [64 in node 1] Best value: -0.027 | TR length: 0.050 | num. failures: 0/1 | num. successes: 4/10
+2024-01-12 21:47:03,990 - INFO - [68 in node 1] Best value: -0.023 | TR length: 0.050 | num. failures: 0/1 | num. successes: 5/10
+2024-01-12 21:47:04,413 - INFO - [72 in node 1] Best value: -0.020 | TR length: 0.050 | num. failures: 0/1 | num. successes: 6/10
+2024-01-12 21:47:04,853 - INFO - [76 in node 1] Best value: -0.018 | TR length: 0.050 | num. failures: 0/1 | num. successes: 7/10
+2024-01-12 21:47:05,645 - INFO - [80 in node 1] Best value: -0.018 | TR length: 0.025 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:06,566 - INFO - [84 in node 1] Best value: -0.008 | TR length: 0.025 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:07,449 - INFO - [88 in node 1] Best value: -0.008 | TR length: 0.013 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:08,140 - INFO - [92 in node 1] Best value: -0.006 | TR length: 0.013 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:08,880 - INFO - [96 in node 1] Best value: -0.006 | TR length: 0.006 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:08,881 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 96 evaluations
+2024-01-12 21:47:09,250 - INFO - [8 in node 3] Best value: -13.655 | TR length: 0.800 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:09,690 - INFO - [12 in node 3] Best value: -9.292 | TR length: 0.800 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:10,272 - INFO - [16 in node 3] Best value: -2.624 | TR length: 0.800 | num. failures: 0/1 | num. successes: 3/10
+2024-01-12 21:47:10,635 - INFO - [20 in node 3] Best value: -2.624 | TR length: 0.400 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:10,984 - INFO - [24 in node 3] Best value: -2.624 | TR length: 0.200 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:11,697 - INFO - [28 in node 3] Best value: -2.624 | TR length: 0.100 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:12,219 - INFO - [32 in node 3] Best value: -0.746 | TR length: 0.100 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:12,945 - INFO - [36 in node 3] Best value: -0.746 | TR length: 0.050 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:13,401 - INFO - [40 in node 3] Best value: -0.174 | TR length: 0.050 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:14,184 - INFO - [44 in node 3] Best value: -0.099 | TR length: 0.050 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:14,578 - INFO - [48 in node 3] Best value: -0.099 | TR length: 0.025 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:15,062 - INFO - [52 in node 3] Best value: -0.006 | TR length: 0.025 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:15,745 - INFO - [56 in node 3] Best value: -0.006 | TR length: 0.013 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:16,257 - INFO - [60 in node 3] Best value: -0.005 | TR length: 0.013 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:16,788 - INFO - [64 in node 3] Best value: -0.005 | TR length: 0.006 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:16,788 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 64 evaluations
+2024-01-12 21:47:17,412 - INFO - [8 in node 3] Best value: -14.662 | TR length: 0.800 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:17,825 - INFO - [12 in node 3] Best value: -5.358 | TR length: 0.800 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:18,411 - INFO - [16 in node 3] Best value: -5.358 | TR length: 0.400 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:18,828 - INFO - [20 in node 3] Best value: -5.358 | TR length: 0.200 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:19,583 - INFO - [24 in node 3] Best value: -1.626 | TR length: 0.200 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:19,951 - INFO - [28 in node 3] Best value: -1.626 | TR length: 0.100 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:20,434 - INFO - [32 in node 3] Best value: -0.707 | TR length: 0.100 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:20,921 - INFO - [36 in node 3] Best value: -0.707 | TR length: 0.050 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:21,675 - INFO - [40 in node 3] Best value: -0.006 | TR length: 0.050 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:22,163 - INFO - [44 in node 3] Best value: -0.006 | TR length: 0.025 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:22,603 - INFO - [48 in node 3] Best value: -0.006 | TR length: 0.013 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:23,092 - INFO - [52 in node 3] Best value: -0.006 | TR length: 0.006 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:23,092 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 52 evaluations
+2024-01-12 21:47:23,679 - INFO - [8 in node 8] Best value: -14.111 | TR length: 0.800 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:24,225 - INFO - [12 in node 8] Best value: -9.652 | TR length: 0.800 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:24,822 - INFO - [16 in node 8] Best value: -3.505 | TR length: 0.800 | num. failures: 0/1 | num. successes: 3/10
+2024-01-12 21:47:25,725 - INFO - [20 in node 8] Best value: -3.505 | TR length: 0.400 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:26,425 - INFO - [24 in node 8] Best value: -3.505 | TR length: 0.200 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:27,200 - INFO - [28 in node 8] Best value: -2.962 | TR length: 0.200 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:27,779 - INFO - [32 in node 8] Best value: -0.452 | TR length: 0.200 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:28,682 - INFO - [36 in node 8] Best value: -0.452 | TR length: 0.100 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:29,350 - INFO - [40 in node 8] Best value: -0.028 | TR length: 0.100 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:30,205 - INFO - [44 in node 8] Best value: -0.028 | TR length: 0.050 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:30,682 - INFO - [48 in node 8] Best value: -0.022 | TR length: 0.050 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:31,158 - INFO - [52 in node 8] Best value: -0.022 | TR length: 0.025 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:31,869 - INFO - [56 in node 8] Best value: -0.019 | TR length: 0.025 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:32,502 - INFO - [60 in node 8] Best value: -0.010 | TR length: 0.025 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:33,398 - INFO - [64 in node 8] Best value: -0.002 | TR length: 0.025 | num. failures: 0/1 | num. successes: 3/10
+2024-01-12 21:47:34,045 - INFO - [68 in node 8] Best value: -0.002 | TR length: 0.013 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:34,670 - INFO - [72 in node 8] Best value: -0.002 | TR length: 0.013 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:35,440 - INFO - [76 in node 8] Best value: -0.001 | TR length: 0.013 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:36,013 - INFO - [80 in node 8] Best value: -0.001 | TR length: 0.006 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:36,013 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 80 evaluations
+2024-01-12 21:47:36,540 - INFO - [8 in node 7] Best value: -14.582 | TR length: 0.800 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:37,265 - INFO - [12 in node 7] Best value: -10.444 | TR length: 0.800 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:37,722 - INFO - [16 in node 7] Best value: -10.444 | TR length: 0.400 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:38,069 - INFO - [20 in node 7] Best value: -7.696 | TR length: 0.400 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:38,664 - INFO - [24 in node 7] Best value: -2.635 | TR length: 0.400 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:39,142 - INFO - [28 in node 7] Best value: -2.635 | TR length: 0.200 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:39,539 - INFO - [32 in node 7] Best value: -0.265 | TR length: 0.200 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:40,002 - INFO - [36 in node 7] Best value: -0.265 | TR length: 0.100 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:40,741 - INFO - [40 in node 7] Best value: -0.007 | TR length: 0.100 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:41,216 - INFO - [44 in node 7] Best value: -0.007 | TR length: 0.050 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:41,828 - INFO - [48 in node 7] Best value: -0.002 | TR length: 0.050 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:42,577 - INFO - [52 in node 7] Best value: -0.002 | TR length: 0.050 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:43,187 - INFO - [56 in node 7] Best value: -0.002 | TR length: 0.025 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:43,965 - INFO - [60 in node 7] Best value: -0.000 | TR length: 0.025 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:44,365 - INFO - [64 in node 7] Best value: -0.000 | TR length: 0.013 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:44,728 - INFO - [68 in node 7] Best value: -0.000 | TR length: 0.006 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:44,729 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 68 evaluations
+2024-01-12 21:47:45,235 - INFO - [8 in node 3] Best value: -14.304 | TR length: 0.800 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:46,201 - INFO - [12 in node 3] Best value: -8.877 | TR length: 0.800 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:46,631 - INFO - [16 in node 3] Best value: -8.877 | TR length: 0.400 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:47,198 - INFO - [20 in node 3] Best value: -5.475 | TR length: 0.400 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:47,957 - INFO - [24 in node 3] Best value: -5.475 | TR length: 0.200 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:48,169 - INFO - [28 in node 3] Best value: -4.043 | TR length: 0.200 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:48,549 - INFO - [32 in node 3] Best value: -0.354 | TR length: 0.200 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:48,866 - INFO - [36 in node 3] Best value: -0.354 | TR length: 0.100 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:49,106 - INFO - [40 in node 3] Best value: -0.188 | TR length: 0.100 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:49,355 - INFO - [44 in node 3] Best value: -0.188 | TR length: 0.050 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:49,739 - INFO - [48 in node 3] Best value: -0.003 | TR length: 0.050 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:49,979 - INFO - [52 in node 3] Best value: -0.003 | TR length: 0.025 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:50,320 - INFO - [56 in node 3] Best value: -0.001 | TR length: 0.025 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:50,521 - INFO - [60 in node 3] Best value: -0.001 | TR length: 0.013 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:50,892 - INFO - [64 in node 3] Best value: -0.001 | TR length: 0.006 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:50,892 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 64 evaluations
+2024-01-12 21:47:51,331 - INFO - [8 in node 8] Best value: -13.655 | TR length: 0.800 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:51,685 - INFO - [12 in node 8] Best value: -11.162 | TR length: 0.800 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:51,882 - INFO - [16 in node 8] Best value: -11.162 | TR length: 0.400 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:52,365 - INFO - [20 in node 8] Best value: -2.702 | TR length: 0.400 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:52,854 - INFO - [24 in node 8] Best value: -0.711 | TR length: 0.400 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:53,375 - INFO - [28 in node 8] Best value: -0.031 | TR length: 0.400 | num. failures: 0/1 | num. successes: 3/10
+2024-01-12 21:47:53,693 - INFO - [32 in node 8] Best value: -0.031 | TR length: 0.200 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:54,225 - INFO - [36 in node 8] Best value: -0.031 | TR length: 0.100 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:54,842 - INFO - [40 in node 8] Best value: -0.031 | TR length: 0.050 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:55,137 - INFO - [44 in node 8] Best value: -0.027 | TR length: 0.050 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:55,601 - INFO - [48 in node 8] Best value: -0.027 | TR length: 0.025 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:56,061 - INFO - [52 in node 8] Best value: -0.012 | TR length: 0.025 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:56,378 - INFO - [56 in node 8] Best value: -0.004 | TR length: 0.025 | num. failures: 0/1 | num. successes: 2/10
+2024-01-12 21:47:56,855 - INFO - [60 in node 8] Best value: -0.004 | TR length: 0.013 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:57,346 - INFO - [64 in node 8] Best value: -0.004 | TR length: 0.013 | num. failures: 0/1 | num. successes: 1/10
+2024-01-12 21:47:57,687 - INFO - [68 in node 8] Best value: -0.004 | TR length: 0.006 | num. failures: 0/1 | num. successes: 0/10
+2024-01-12 21:47:57,688 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 68 evaluations
+2024-01-12 21:47:57,890 - INFO - --------------------------------------------------
+2024-01-12 21:47:57,892 - INFO - Best X: tensor([0.3333, 0.3333], device='cuda:0', dtype=torch.float64)
+2024-01-12 21:47:57,893 - INFO - Best Y: -0.00027504061951022507
+2024-01-12 21:47:57,893 - INFO - Elapsed time: 64.65 seconds

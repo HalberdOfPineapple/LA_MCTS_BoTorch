@@ -1,0 +1,30 @@
+expr_name: test_expr
+num_runs: 1000
+
+mcts_params:
+  num_init: 40
+  batch_size: 20
+  obj_func: 
+    name: 'ackley'
+    dim: 20
+    lb: -5
+    ub: 10
+  
+  seed: 0
+  Cp: 1.0 
+  leaf_size: 20
+  node_selection_type: UCB
+  initial_sampling_method: Sobol
+
+  optimizer:
+    type: turbo
+    params:
+      batch_size: 4 # Note this is the "local" batch size
+      acqf: ts
+      num_restarts: 10
+      raw_samples: 512
+  classifier:
+    type: svm
+    params:
+      kernel_type: rbf
+      gamma_type: auto
