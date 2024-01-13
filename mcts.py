@@ -1,3 +1,4 @@
+import os 
 import torch
 import numpy as np
 from torch.quasirandom import SobolEngine
@@ -8,7 +9,7 @@ from optimizer import OPTIMIZER_MAP, BaseOptimizer
 from classifier import CLASSIFIER_MAP
 
 from botorch.utils.transforms import unnormalize
-from utils import get_logger, check_path
+from utils import get_logger, check_path, get_expr_name, PATH_DIR
 
 logger = None
 
@@ -27,6 +28,7 @@ class MCTS:
         leaf_size: int = 20,
         node_selection_type: str = 'UCB',
         initial_sampling_method: str = 'Sobol',
+        save_path: bool=False,
     ):
         global logger
         logger = get_logger()
@@ -51,6 +53,7 @@ class MCTS:
         self.Cp = Cp
         self.leaf_size = leaf_size
         self.node_selection_type = node_selection_type
+        self.save_path: bool = save_path
 
         self.dtype = bounds.dtype
         self.device = bounds.device
@@ -182,6 +185,18 @@ class MCTS:
             path.append(curr_node)
         
         check_path(path)
+        if self.save_path:
+            svm_save_dir = os.path.join(PATH_DIR, get_expr_name())
+            if not os.path.exists(svm_save_dir): os.makedirs(svm_save_dir)
+            for i in range(len(path) - 1):
+                node, child = path[i], path[i+1]
+                pkl_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.pkl')
+                node.save_classifier(pkl_path)
+
+                label_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.txt')
+                with open(label_path, 'w') as f:
+                    f.write(f'{child.label}')
+                
         return path
 
     def local_modelling(self, num_evals: int, path: List['Node'], bounds: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:

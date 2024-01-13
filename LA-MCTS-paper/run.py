@@ -40,6 +40,8 @@ LOG_DIR = os.path.join(BASE_DIR, 'logs')
 FUNCTION_MAP: Dict[str, Any] = {
     'ackley': Ackley,
     'levy':  Levy,
+    'rosenbrock': Rosenbrock,
+    'rastrigin': Rastrigin,
     'lunar': Lunarlanding,
     'swimmer': Swimmer,
     'hopper': Hopper,
@@ -47,16 +49,12 @@ FUNCTION_MAP: Dict[str, Any] = {
 
 
 def main(args):
+    print('-' * 80)
     if args.func not in FUNCTION_MAP:
         raise ValueError(f"Not defined function: {args.func}")
 
     func_cls = FUNCTION_MAP[args.func]
-    if args.func == 'ackley' or args.func == 'levy':
-        if args.dims <= 0:
-            raise ValueError(f'Dimentionality should be >0 when function is {args.func}')
-        f = func_cls(dims=args.dims)
-    else:
-        f = func_cls()
+    f = func_cls(dims=args.dims)
 
     assert args.iterations > 0, "Number of iterations should be > 0"
 
@@ -84,7 +82,7 @@ def main(args):
             f.write(f'{fx}, {x}\n')
     with open(os.path.join(LOG_DIR, expr_name + '.log'), 'w') as f:
         f.write(f'Best Function value: {np.max(fxs):.4f}\n')
-        f.write(f'Elapsed time: {elapsed_time:3f}\n seconds')
+        f.write(f'Elapsed time: {elapsed_time:3f} seconds\n')
         
 
 if __name__ == '__main__':

@@ -8,10 +8,13 @@ from node import Node
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_DIR = os.path.join(BASE_DIR, 'logs')
 CONFIG_DIR = os.path.join(BASE_DIR, 'configs')
+PATH_DIR = os.path.join(BASE_DIR, 'paths')
 if not os.path.exists(LOG_DIR): os.makedirs(LOG_DIR)
 if not os.path.exists(CONFIG_DIR): os.makedirs(CONFIG_DIR)
+if not os.path.exists(PATH_DIR): os.makedirs(PATH_DIR)
 
 LOGGER: logging.Logger = None
+EXPR_NAME: str = None
 
 def init_logger(expr_name: str):
     # Setup logging
@@ -24,11 +27,24 @@ def init_logger(expr_name: str):
     global LOGGER
     LOGGER = logging.getLogger(expr_name)
 
+def set_expr_name(expr_name: str):
+    global EXPR_NAME
+    EXPR_NAME = expr_name
+
+def get_expr_name():
+    global EXPR_NAME
+    return EXPR_NAME
+
 def get_logger():
     global LOGGER
     assert LOGGER is not None, "[utils.py] the global ogger has not been initialized. Please call init_logger() first."
     return LOGGER
 
+def print_log(msg: str):
+    print(msg)
+    global LOGGER
+    if LOGGER is not None:
+        LOGGER.info(msg)
 
 def path_filter(path: List[Node], candidates: torch.Tensor) -> np.array:
     """

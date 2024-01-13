@@ -94,3 +94,7 @@ class Node:
         return labels
     
     
+    def save_classifier(self, classifier_save_path: str):
+        import pickle
+        with open(classifier_save_path,'wb') as f:
+            pickle.dump(self.classifier.svm, f)

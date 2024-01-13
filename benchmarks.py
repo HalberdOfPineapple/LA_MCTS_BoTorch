@@ -15,6 +15,7 @@ class AckleyBenchmark:
         self.leaf_size: int = 20
         self.node_selection_type: str = 'UCB'
         self.initial_sampling_method: str = 'Sobol'
+        self.save_path: bool = kwargs.get('save_path', False)
 
         # Function settings
         self.dim: int = kwargs.get('dim', 20)
@@ -56,6 +57,7 @@ class AckleyBenchmark:
             'leaf_size': self.leaf_size,
             'node_selection_type': self.node_selection_type,
             'initial_sampling_method': self.initial_sampling_method,
+            'save_path': self.save_path,
             'bounds': self.bounds,
             'num_init': self.num_init,
             'obj_func': self.obj_func,
@@ -76,8 +78,9 @@ class RosenbrockBenchmark:
         # Function settings
         self.dim: int = kwargs.get('dim', 20)
         print(f"Using Rosenbrock {self.dim}D")
+
         self.negate: bool = kwargs.get('negate', True)
-        self.lb: float = kwargs.get('lb', -5.)
+        self.lb: float = kwargs.get('lb', -9.)
         self.ub: float = kwargs.get('ub', 10.)
         self.bounds: torch.tensor = torch.tensor([[self.lb] * self.dim, [self.ub] * self.dim]).to(dtype=dtype, device=device)
         self.obj_func = Rosenbrock(
@@ -92,17 +95,16 @@ class RosenbrockBenchmark:
             'acqf': 'ts',
             'num_restarts': 10,
             'raw_samples': 512,
+            'max_cholesky_size': 2000,
         }
 
         # Classifier settings
         self.classifier_type: str = 'SVM'
         self.classifier_params: dict = {
-            'kernel_type': 'rbf',
+            'kernel_type': "poly",
             'gamma_type': 'auto',
         }
 
-        for k, v in kwargs.items():
-            setattr(self, k, v)
 
     def to_dict(self):
         return {
@@ -133,7 +135,7 @@ class LevyBenchmark:
         print(f"Using Levy {self.dim}D")
 
         self.negate: bool = kwargs.get('negate', True)
-        self.lb: float = kwargs.get('lb', -5.)
+        self.lb: float = kwargs.get('lb', -10.)
         self.ub: float = kwargs.get('ub', 10.)
         self.bounds: torch.tensor = torch.tensor([[self.lb] * self.dim, [self.ub] * self.dim]).to(dtype=dtype, device=device)
         self.obj_func = Levy(
@@ -153,7 +155,7 @@ class LevyBenchmark:
         # Classifier settings
         self.classifier_type: str = 'SVM'
         self.classifier_params: dict = {
-            'kernel_type': 'rbf',
+            'kernel_type': 'poly',
             'gamma_type': 'auto',
         }
 
@@ -191,14 +193,14 @@ class RastriginBenchmark:
         print(f"Using Rastrigin {self.dim}D")
 
         self.negate: bool = kwargs.get('negate', True)
-        self.lb: float = kwargs.get('lb', -5.)
-        self.ub: float = kwargs.get('ub', 10.)
+        self.lb: float = kwargs.get('lb', -5.12)
+        self.ub: float = kwargs.get('ub', 5.12)
         self.bounds: torch.tensor = torch.tensor([[self.lb] * self.dim, [self.ub] * self.dim]).to(dtype=dtype, device=device)
-        self.obj_func = Levy(
+        self.obj_func = Rastrigin(
             dim=self.dim, negate=self.negate,
             bounds=[(self.lb, self.ub) for _ in range(self.dim)]).to(dtype=dtype, device=device)
 
-        self.num_init = 40
+        self.num_init = kwargs.get('num_init', 2 * self.dim)
         # Optimizer settings
         self.optimizer_type: str = 'turbo'
         self.optimizer_params: dict =  {
@@ -214,9 +216,6 @@ class RastriginBenchmark:
             'kernel_type': 'rbf',
             'gamma_type': 'auto',
         }
-
-        for k, v in kwargs.items():
-            setattr(self, k, v)
         
         print('[Rastrigin] Rastrigin Initialized')
 
@@ -368,65 +367,10 @@ class LunarLandingBench:
             'classifier_params': self.classifier_params,
         }
 
-class RastriginBenchmark:
-    def __init__(self, **kwargs):
-        self.seed = 0
-        self.Cp: float = 1.
-        self.leaf_size: int = 20
-        self.node_selection_type: str = 'UCB'
-        self.initial_sampling_method: str = 'Sobol'
-
-        # Function settings
-        self.dim: int = kwargs.get('dim', 20)
-        self.negate: bool = kwargs.get('negate', True)
-        self.lb: float = kwargs.get('lb', -5.)
-        self.ub: float = kwargs.get('ub', 10.)
-        self.bounds: torch.tensor = torch.tensor([[self.lb] * self.dim, [self.ub] * self.dim]).to(dtype=dtype, device=device)
-        self.obj_func = Levy(
-            dim=self.dim, negate=self.negate,
-            bounds=[(self.lb, self.ub) for _ in range(self.dim)]).to(dtype=dtype, device=device)
-
-        self.num_init = 40
-        # Optimizer settings
-        self.optimizer_type: str = 'turbo'
-        self.optimizer_params: dict =  {
-            'batch_size': 4, # Note this is the "local" batch size
-            'acqf': 'ts',
-            'num_restarts': 10,
-            'raw_samples': 512,
-        }
-
-        # Classifier settings
-        self.classifier_type: str = 'SVM'
-        self.classifier_params: dict = {
-            'kernel_type': 'rbf',
-            'gamma_type': 'auto',
-        }
-
-        for k, v in kwargs.items():
-            setattr(self, k, v)
-        
-        print('[Rastrigin] Rastrigin Initialized')
-
-    def to_dict(self):
-        return {
-            'seed': self.seed,
-            'Cp': self.Cp,
-            'leaf_size': self.leaf_size,
-            'node_selection_type': self.node_selection_type,
-            'initial_sampling_method': self.initial_sampling_method,
-            'bounds': self.bounds,
-            'num_init': self.num_init,
-            'obj_func': self.obj_func,
-            'optimizer_type': self.optimizer_type,
-            'optimizer_params': self.optimizer_params,
-            'classifier_type': self.classifier_type,
-            'classifier_params': self.classifier_params,
-        }
 
 
 BENCHMARK_MAP = {
-    'ackley2d': (AckleyBenchmark, {'dim': 2}),
+    'ackley2d': (AckleyBenchmark, {'dim': 2, 'lb': -10., 'save_path': True}),
     'ackley20d': (AckleyBenchmark, {'dim': 20}),
     'ackley50d': (AckleyBenchmark, {'dim': 50}),
     'ackley100d': (AckleyBenchmark, {'dim': 100}),

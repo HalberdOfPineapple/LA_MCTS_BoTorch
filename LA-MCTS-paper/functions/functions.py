@@ -14,6 +14,8 @@ from typing import Dict, Any
 import torch
 from botorch.test_functions.synthetic import Ackley as BoAckley
 from botorch.test_functions.synthetic import Levy as BoLevy
+from botorch.test_functions.synthetic import Rastrigin as BoRastrigin
+from botorch.test_functions.synthetic import Rosenbrock as BoRosenbrock
 
 class tracker:
     def __init__(self, foldername):
@@ -41,7 +43,7 @@ class tracker:
         if len(self.results) % 100 == 0:
             self.dump_trace()
 
-class Levy:
+class Rosenbrock:
     def __init__(self, dims=10):
         self.dims        = dims
         self.lb          = -10 * np.ones(dims)
@@ -49,10 +51,39 @@ class Levy:
         # self.tracker     = tracker('Levy'+str(dims))
         
         #tunable hyper-parameters in LA-MCTS
-        self.Cp          = 10
-        self.leaf_size   = 8
+        self.Cp          = 1
+        self.leaf_size   = 20
         self.kernel_type = "poly"
-        self.ninits      = 40
+        self.ninits      = 2 * dims
+        self.gamma_type   = "auto"
+        print("initialize Rosenbrock at dims:", self.dims)
+
+        self.rosenbrock = BoRosenbrock(self.dims, 
+                    bounds=[(self.lb[0], self.ub[0])] * self.dims)
+
+    def __call__(self, x):
+        assert len(x) == self.dims
+        assert x.ndim == 1
+        # assert np.all(x <= self.ub) and np.all(x >= self.lb)
+        # result = (-20*np.exp(-0.2 * np.sqrt(np.inner(x,x) / x.size )) -np.exp(np.cos(2*np.pi*x).sum() /x.size) + 20 +np.e )
+
+        result = float(self.rosenbrock(torch.Tensor(x.reshape(-1, self.dims))).numpy()[0])
+        # self.tracker.track( result )
+
+        return result
+
+class Levy:
+    def __init__(self, dims=10):
+        self.dims        = dims
+        self.ninits      = 2 * dims
+        self.lb          = -10 * np.ones(dims)
+        self.ub          =  10 * np.ones(dims)
+        # self.tracker     = tracker('Levy'+str(dims))
+        
+        #tunable hyper-parameters in LA-MCTS
+        self.Cp          = 1.
+        self.leaf_size   = 20
+        self.kernel_type = "poly"
         self.gamma_type   = "auto"
         print("initialize levy at dims:", self.dims)
 
@@ -94,8 +125,8 @@ class Ackley:
         # self.tracker   = tracker('Ackley'+str(dims) )
         
         #tunable hyper-parameters in LA-MCTS
-        self.Cp        = 1
-        self.leaf_size = 10
+        self.Cp        = 1.
+        self.leaf_size = 20
         self.ninits    = 40
         self.kernel_type = "rbf"
         self.gamma_type  = "auto"
@@ -115,7 +146,35 @@ class Ackley:
         # self.tracker.track( result )
 
         return result
+
+class Rastrigin:
+    def __init__(self, dims=10):
+        self.dims      = dims
+        self.lb        = -5.12 * np.ones(dims)
+        self.ub        = 5.12 * np.ones(dims)
+        self.counter   = 0
         
+        #tunable hyper-parameters in LA-MCTS
+        self.Cp        = 1
+        self.leaf_size = 20
+        self.ninits    = 40
+        self.kernel_type = "rbf"
+        self.gamma_type  = "auto"
+
+        self.rastrigin = BoRastrigin(
+            dim=self.dims,
+            bounds=[(self.lb[0], self.ub[0]) for _ in range(self.dims)])
+        print("initialize Rastrigin at dims:", self.dims)
+        print(f"function object: {self.rastrigin}")
+
+    def __call__(self, x):
+        self.counter += 1
+        assert len(x) == self.dims
+        assert x.ndim == 1
+
+        result = float(self.rastrigin(torch.Tensor(x.reshape(-1, self.dims))).numpy()[0])
+        return result
+
 class Lunarlanding:
     def __init__(self):
         self.dims = 12

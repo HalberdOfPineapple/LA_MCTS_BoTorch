@@ -130,7 +130,7 @@ class TuRBO(BaseOptimizer):
         self.dimension = bounds.shape[1]
         self.batch_size = optimizer_params['batch_size']
         
-        self.max_cholesky_size = float('inf')
+        self.max_cholesky_size = optimizer_params.get('max_cholesky_size', float('inf'))
         self.num_restarts = optimizer_params.get('num_restarts', 10) # 10 if not SMOKE_TEST else 2
         self.raw_samples = optimizer_params.get('raw_samples', 512) # 512 if not SMOKE_TEST else 4
         self.n_candidates = min(5000, max(2000, 200 * self.dimension)) # if not SMOKE_TEST else 4
@@ -275,7 +275,10 @@ class TuRBO(BaseOptimizer):
             mll = ExactMarginalLogLikelihood(model.likelihood, model)
 
             with gpytorch.settings.max_cholesky_size(self.max_cholesky_size):
-                fit_gpytorch_mll(mll)
+                try:
+                    fit_gpytorch_mll(mll)
+                except Exception as ex:
+                    print_log(f"[TuRBO] {ex} happens when fitting model, restart.")
                 X_next = self.generate_batch(
                     state=state, model=model, X=train_X, Y=train_Y)
             X_next = X_next[:min(self.batch_size, num_evals - self.num_calls)]

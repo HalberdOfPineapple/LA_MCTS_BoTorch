@@ -1,0 +1,490 @@
+2024-01-13 15:26:17,011 - INFO - Start experiment: mcts_rastrigin20d_1000
+2024-01-13 15:26:17,011 - INFO - ==================================================
+2024-01-13 15:26:17,012 - INFO - Config:
+2024-01-13 15:26:17,012 - INFO - seed: 0
+2024-01-13 15:26:17,012 - INFO - Cp: 1.0
+2024-01-13 15:26:17,012 - INFO - leaf_size: 20
+2024-01-13 15:26:17,013 - INFO - node_selection_type: UCB
+2024-01-13 15:26:17,013 - INFO - initial_sampling_method: Sobol
+2024-01-13 15:26:17,017 - INFO - bounds: tensor([[-5.1200, -5.1200, -5.1200, -5.1200, -5.1200, -5.1200, -5.1200, -5.1200,
+         -5.1200, -5.1200, -5.1200, -5.1200, -5.1200, -5.1200, -5.1200, -5.1200,
+         -5.1200, -5.1200, -5.1200, -5.1200],
+        [ 5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,
+          5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,
+          5.1200,  5.1200,  5.1200,  5.1200]], device='cuda:0',
+       dtype=torch.float64)
+2024-01-13 15:26:17,019 - INFO - num_init: 40
+2024-01-13 15:26:17,019 - INFO - obj_func: Rastrigin()
+2024-01-13 15:26:17,019 - INFO - optimizer_type: turbo
+2024-01-13 15:26:17,019 - INFO - optimizer_params: {'batch_size': 4, 'acqf': 'ts', 'num_restarts': 10, 'raw_samples': 512}
+2024-01-13 15:26:17,019 - INFO - classifier_type: SVM
+2024-01-13 15:26:17,020 - INFO - classifier_params: {'kernel_type': 'rbf', 'gamma_type': 'auto'}
+2024-01-13 15:26:17,020 - INFO - ==================================================
+2024-01-13 15:26:20,645 - INFO - [44 in node 1] Best value: -321.570 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:26:21,401 - INFO - [48 in node 1] Best value: -312.561 | TR length: 0.800 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:26:22,269 - INFO - [52 in node 1] Best value: -281.898 | TR length: 0.800 | num. failures: 0/5 | num. successes: 3/10
+2024-01-13 15:26:23,196 - INFO - [56 in node 1] Best value: -281.898 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:24,127 - INFO - [60 in node 1] Best value: -281.898 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:26:24,956 - INFO - [64 in node 1] Best value: -281.898 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:26:26,090 - INFO - [68 in node 1] Best value: -221.933 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:26:27,228 - INFO - [72 in node 1] Best value: -221.933 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:28,280 - INFO - [76 in node 1] Best value: -221.933 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:26:29,373 - INFO - [80 in node 1] Best value: -221.933 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:26:30,265 - INFO - [84 in node 1] Best value: -221.933 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:26:31,265 - INFO - [88 in node 1] Best value: -221.933 | TR length: 0.400 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:26:32,042 - INFO - [92 in node 1] Best value: -221.933 | TR length: 0.400 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:32,740 - INFO - [96 in node 1] Best value: -221.933 | TR length: 0.400 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:26:33,315 - INFO - [100 in node 1] Best value: -221.933 | TR length: 0.400 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:26:34,158 - INFO - [104 in node 1] Best value: -221.933 | TR length: 0.400 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:26:34,922 - INFO - [108 in node 1] Best value: -221.933 | TR length: 0.200 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:26:35,977 - INFO - [112 in node 1] Best value: -221.933 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:36,949 - INFO - [116 in node 1] Best value: -221.933 | TR length: 0.200 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:26:37,784 - INFO - [120 in node 1] Best value: -221.933 | TR length: 0.200 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:26:38,555 - INFO - [124 in node 1] Best value: -221.933 | TR length: 0.200 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:26:39,357 - INFO - [128 in node 1] Best value: -221.933 | TR length: 0.100 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:26:40,051 - INFO - [132 in node 1] Best value: -221.933 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:40,813 - INFO - [136 in node 1] Best value: -221.933 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:26:41,568 - INFO - [140 in node 1] Best value: -221.933 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:26:42,896 - INFO - [144 in node 1] Best value: -221.933 | TR length: 0.100 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:26:43,694 - INFO - [148 in node 1] Best value: -221.933 | TR length: 0.050 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:26:44,745 - INFO - [152 in node 1] Best value: -221.933 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:45,636 - INFO - [156 in node 1] Best value: -208.313 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:26:46,747 - INFO - [160 in node 1] Best value: -208.313 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:48,003 - INFO - [164 in node 1] Best value: -204.610 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:26:53,278 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:26:53,463 - INFO - [168 in node 1] Best value: -204.610 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:54,530 - INFO - [172 in node 1] Best value: -193.666 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:26:55,640 - INFO - [176 in node 1] Best value: -193.666 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:26:56,972 - INFO - [180 in node 1] Best value: -193.666 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:26:58,268 - INFO - [184 in node 1] Best value: -193.666 | TR length: 0.050 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:26:59,761 - INFO - [188 in node 1] Best value: -193.666 | TR length: 0.050 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:27:08,642 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:27:08,831 - INFO - [192 in node 1] Best value: -193.666 | TR length: 0.025 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:27:16,104 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:27:16,294 - INFO - [196 in node 1] Best value: -185.157 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:27:24,760 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:27:24,947 - INFO - [200 in node 1] Best value: -185.157 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:27:31,652 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:27:31,843 - INFO - [204 in node 1] Best value: -185.157 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:27:33,095 - INFO - [208 in node 1] Best value: -177.434 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:27:34,215 - INFO - [212 in node 1] Best value: -177.434 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:27:35,580 - INFO - [216 in node 1] Best value: -177.434 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:27:37,994 - INFO - [220 in node 1] Best value: -157.640 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:27:39,353 - INFO - [224 in node 1] Best value: -157.640 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:27:40,998 - INFO - [228 in node 1] Best value: -157.640 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:27:42,485 - INFO - [232 in node 1] Best value: -157.640 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:27:44,196 - INFO - [236 in node 1] Best value: -157.640 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:27:45,855 - INFO - [240 in node 1] Best value: -144.046 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:27:46,856 - INFO - [244 in node 1] Best value: -142.543 | TR length: 0.025 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:27:54,400 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:27:54,596 - INFO - [248 in node 1] Best value: -142.543 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:02,758 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:28:02,961 - INFO - [252 in node 1] Best value: -142.543 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:04,081 - INFO - [256 in node 1] Best value: -142.543 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:28:05,981 - INFO - [260 in node 1] Best value: -142.543 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:28:07,241 - INFO - [264 in node 1] Best value: -142.543 | TR length: 0.013 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:28:08,669 - INFO - [268 in node 1] Best value: -133.074 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:28:16,324 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:28:16,528 - INFO - [272 in node 1] Best value: -133.074 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:18,103 - INFO - [276 in node 1] Best value: -133.074 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:25,675 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:28:25,877 - INFO - [280 in node 1] Best value: -133.074 | TR length: 0.013 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:28:27,597 - INFO - [284 in node 1] Best value: -122.449 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:28:28,903 - INFO - [288 in node 1] Best value: -115.136 | TR length: 0.013 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:28:30,341 - INFO - [292 in node 1] Best value: -115.136 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:31,919 - INFO - [296 in node 1] Best value: -110.684 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:28:33,478 - INFO - [300 in node 1] Best value: -110.684 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:35,195 - INFO - [304 in node 1] Best value: -110.684 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:36,636 - INFO - [308 in node 1] Best value: -110.684 | TR length: 0.013 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:28:38,114 - INFO - [312 in node 1] Best value: -110.684 | TR length: 0.013 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:28:39,502 - INFO - [316 in node 1] Best value: -110.684 | TR length: 0.006 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:28:39,502 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 316 evaluations
+2024-01-13 15:28:40,112 - INFO - [44 in node 7] Best value: -318.677 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:28:40,435 - INFO - [48 in node 7] Best value: -284.298 | TR length: 0.800 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:28:40,778 - INFO - [52 in node 7] Best value: -284.298 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:41,250 - INFO - [56 in node 7] Best value: -284.298 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:41,714 - INFO - [60 in node 7] Best value: -265.375 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:28:42,150 - INFO - [64 in node 7] Best value: -265.375 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:42,624 - INFO - [68 in node 7] Best value: -265.375 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:43,157 - INFO - [72 in node 7] Best value: -265.375 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:28:43,728 - INFO - [76 in node 7] Best value: -265.375 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:28:44,264 - INFO - [80 in node 7] Best value: -243.115 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:28:44,915 - INFO - [84 in node 7] Best value: -223.789 | TR length: 0.800 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:28:45,531 - INFO - [88 in node 7] Best value: -223.789 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:46,088 - INFO - [92 in node 7] Best value: -218.095 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:28:46,587 - INFO - [96 in node 7] Best value: -218.095 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:47,008 - INFO - [100 in node 7] Best value: -218.095 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:47,694 - INFO - [104 in node 7] Best value: -218.095 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:28:48,367 - INFO - [108 in node 7] Best value: -218.095 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:28:48,932 - INFO - [112 in node 7] Best value: -218.095 | TR length: 0.400 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:28:49,535 - INFO - [116 in node 7] Best value: -218.095 | TR length: 0.400 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:50,168 - INFO - [120 in node 7] Best value: -218.095 | TR length: 0.400 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:50,935 - INFO - [124 in node 7] Best value: -218.095 | TR length: 0.400 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:28:51,931 - INFO - [128 in node 7] Best value: -218.095 | TR length: 0.400 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:28:52,867 - INFO - [132 in node 7] Best value: -218.095 | TR length: 0.200 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:28:53,857 - INFO - [136 in node 7] Best value: -218.095 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:28:54,892 - INFO - [140 in node 7] Best value: -218.095 | TR length: 0.200 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:28:56,092 - INFO - [144 in node 7] Best value: -218.095 | TR length: 0.200 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:28:57,111 - INFO - [148 in node 7] Best value: -218.095 | TR length: 0.200 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:28:58,217 - INFO - [152 in node 7] Best value: -218.095 | TR length: 0.100 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:28:59,116 - INFO - [156 in node 7] Best value: -199.761 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:29:00,353 - INFO - [160 in node 7] Best value: -192.201 | TR length: 0.100 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:29:01,125 - INFO - [164 in node 7] Best value: -192.201 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:02,142 - INFO - [168 in node 7] Best value: -192.201 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:29:03,317 - INFO - [172 in node 7] Best value: -192.201 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:29:04,531 - INFO - [176 in node 7] Best value: -180.767 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:29:05,895 - INFO - [180 in node 7] Best value: -180.767 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:07,509 - INFO - [184 in node 7] Best value: -180.767 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:29:08,674 - INFO - [188 in node 7] Best value: -180.767 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:29:10,259 - INFO - [192 in node 7] Best value: -180.767 | TR length: 0.100 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:29:11,805 - INFO - [196 in node 7] Best value: -180.767 | TR length: 0.050 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:29:13,423 - INFO - [200 in node 7] Best value: -161.064 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:29:14,965 - INFO - [204 in node 7] Best value: -131.711 | TR length: 0.050 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:29:16,480 - INFO - [208 in node 7] Best value: -131.711 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:18,379 - INFO - [212 in node 7] Best value: -131.711 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:29:19,895 - INFO - [216 in node 7] Best value: -131.711 | TR length: 0.050 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:29:21,151 - INFO - [220 in node 7] Best value: -131.711 | TR length: 0.050 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:29:23,139 - INFO - [224 in node 7] Best value: -131.711 | TR length: 0.025 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:29:24,835 - INFO - [228 in node 7] Best value: -131.711 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:26,439 - INFO - [232 in node 7] Best value: -131.711 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:29:27,952 - INFO - [236 in node 7] Best value: -122.570 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:29:29,385 - INFO - [240 in node 7] Best value: -116.462 | TR length: 0.025 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:29:31,593 - INFO - [244 in node 7] Best value: -108.971 | TR length: 0.025 | num. failures: 0/5 | num. successes: 3/10
+2024-01-13 15:29:33,451 - INFO - [248 in node 7] Best value: -102.962 | TR length: 0.025 | num. failures: 0/5 | num. successes: 4/10
+2024-01-13 15:29:34,868 - INFO - [252 in node 7] Best value: -102.962 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:36,477 - INFO - [256 in node 7] Best value: -102.962 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:29:37,909 - INFO - [260 in node 7] Best value: -102.962 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:29:39,853 - INFO - [264 in node 7] Best value: -102.962 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:29:42,215 - INFO - [268 in node 7] Best value: -102.962 | TR length: 0.013 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:29:43,580 - INFO - [272 in node 7] Best value: -102.962 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:44,909 - INFO - [276 in node 7] Best value: -102.962 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:29:46,523 - INFO - [280 in node 7] Best value: -100.822 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:29:48,100 - INFO - [284 in node 7] Best value: -100.822 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:49,704 - INFO - [288 in node 7] Best value: -98.350 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:29:51,074 - INFO - [292 in node 7] Best value: -98.350 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:52,612 - INFO - [296 in node 7] Best value: -95.799 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:29:54,311 - INFO - [300 in node 7] Best value: -95.799 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:29:56,001 - INFO - [304 in node 7] Best value: -95.799 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:29:57,400 - INFO - [308 in node 7] Best value: -95.799 | TR length: 0.013 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:29:58,842 - INFO - [312 in node 7] Best value: -92.688 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:00,632 - INFO - [316 in node 7] Best value: -92.688 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:01,978 - INFO - [320 in node 7] Best value: -92.688 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:03,311 - INFO - [324 in node 7] Best value: -92.613 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:04,806 - INFO - [328 in node 7] Best value: -92.613 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:06,086 - INFO - [332 in node 7] Best value: -92.179 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:07,376 - INFO - [336 in node 7] Best value: -92.179 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:08,604 - INFO - [340 in node 7] Best value: -92.111 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:09,803 - INFO - [344 in node 7] Best value: -92.111 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:10,908 - INFO - [348 in node 7] Best value: -92.111 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:11,976 - INFO - [352 in node 7] Best value: -92.111 | TR length: 0.013 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:13,044 - INFO - [356 in node 7] Best value: -92.111 | TR length: 0.013 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:30:14,258 - INFO - [360 in node 7] Best value: -92.111 | TR length: 0.006 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:30:14,258 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 360 evaluations
+2024-01-13 15:30:15,348 - INFO - [44 in node 3] Best value: -297.338 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:15,835 - INFO - [48 in node 3] Best value: -297.338 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:16,484 - INFO - [52 in node 3] Best value: -297.338 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:17,083 - INFO - [56 in node 3] Best value: -297.338 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:17,608 - INFO - [60 in node 3] Best value: -297.338 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:30:18,108 - INFO - [64 in node 3] Best value: -288.674 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:18,663 - INFO - [68 in node 3] Best value: -223.813 | TR length: 0.800 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:30:19,277 - INFO - [72 in node 3] Best value: -223.813 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:19,585 - INFO - [76 in node 3] Best value: -223.813 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:20,391 - INFO - [80 in node 3] Best value: -223.813 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:21,138 - INFO - [84 in node 3] Best value: -223.813 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:30:21,746 - INFO - [88 in node 3] Best value: -223.813 | TR length: 0.400 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:30:22,655 - INFO - [92 in node 3] Best value: -223.813 | TR length: 0.400 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:22,947 - INFO - [96 in node 3] Best value: -223.813 | TR length: 0.400 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:23,778 - INFO - [100 in node 3] Best value: -223.813 | TR length: 0.400 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:24,585 - INFO - [104 in node 3] Best value: -223.813 | TR length: 0.400 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:30:25,267 - INFO - [108 in node 3] Best value: -223.813 | TR length: 0.200 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:30:26,125 - INFO - [112 in node 3] Best value: -223.813 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:26,875 - INFO - [116 in node 3] Best value: -176.449 | TR length: 0.200 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:27,658 - INFO - [120 in node 3] Best value: -176.449 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:28,632 - INFO - [124 in node 3] Best value: -176.449 | TR length: 0.200 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:29,541 - INFO - [128 in node 3] Best value: -176.449 | TR length: 0.200 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:30,443 - INFO - [132 in node 3] Best value: -176.449 | TR length: 0.200 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:30:31,412 - INFO - [136 in node 3] Best value: -176.449 | TR length: 0.100 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:30:32,461 - INFO - [140 in node 3] Best value: -176.449 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:33,388 - INFO - [144 in node 3] Best value: -176.449 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:34,402 - INFO - [148 in node 3] Best value: -176.449 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:35,341 - INFO - [152 in node 3] Best value: -172.210 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:36,269 - INFO - [156 in node 3] Best value: -172.210 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:37,442 - INFO - [160 in node 3] Best value: -172.210 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:38,333 - INFO - [164 in node 3] Best value: -172.210 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:39,349 - INFO - [168 in node 3] Best value: -172.210 | TR length: 0.100 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:30:40,535 - INFO - [172 in node 3] Best value: -172.210 | TR length: 0.050 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:30:41,486 - INFO - [176 in node 3] Best value: -172.210 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:42,883 - INFO - [180 in node 3] Best value: -167.535 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:44,369 - INFO - [184 in node 3] Best value: -167.535 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:45,434 - INFO - [188 in node 3] Best value: -167.535 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:46,405 - INFO - [192 in node 3] Best value: -137.927 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:30:47,463 - INFO - [196 in node 3] Best value: -137.927 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:48,752 - INFO - [200 in node 3] Best value: -137.927 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:50,547 - INFO - [204 in node 3] Best value: -137.927 | TR length: 0.050 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:30:51,630 - INFO - [208 in node 3] Best value: -137.927 | TR length: 0.050 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:30:53,649 - INFO - [212 in node 3] Best value: -137.927 | TR length: 0.025 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:30:55,637 - INFO - [216 in node 3] Best value: -137.927 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:30:56,996 - INFO - [220 in node 3] Best value: -137.927 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:30:58,765 - INFO - [224 in node 3] Best value: -133.227 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:31:00,444 - INFO - [228 in node 3] Best value: -124.285 | TR length: 0.025 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:31:01,701 - INFO - [232 in node 3] Best value: -112.649 | TR length: 0.025 | num. failures: 0/5 | num. successes: 3/10
+2024-01-13 15:31:02,691 - INFO - [236 in node 3] Best value: -112.649 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:31:04,075 - INFO - [240 in node 3] Best value: -112.649 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:31:05,141 - INFO - [244 in node 3] Best value: -112.649 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:31:06,478 - INFO - [248 in node 3] Best value: -112.649 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:31:07,808 - INFO - [252 in node 3] Best value: -94.360 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:31:09,054 - INFO - [256 in node 3] Best value: -94.360 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:31:10,255 - INFO - [260 in node 3] Best value: -94.360 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:31:11,167 - INFO - [264 in node 3] Best value: -94.360 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:31:12,714 - INFO - [268 in node 3] Best value: -94.360 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:31:14,542 - INFO - [272 in node 3] Best value: -94.360 | TR length: 0.013 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:31:16,701 - INFO - [276 in node 3] Best value: -94.360 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:31:18,147 - INFO - [280 in node 3] Best value: -94.360 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:31:20,211 - INFO - [284 in node 3] Best value: -94.360 | TR length: 0.013 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:31:20,213 - INFO - --------------------------------------------------
+2024-01-13 15:31:20,215 - INFO - Best X: tensor([0.6953, 0.7887, 0.4015, 0.3083, 0.5930, 0.5971, 0.3992, 0.2085, 0.1093,
+        0.6939, 0.3083, 0.3081, 0.4058, 0.6949, 0.2056, 0.4996, 0.7913, 0.6917,
+        0.5919, 0.6954], device='cuda:0', dtype=torch.float64)
+2024-01-13 15:31:20,215 - INFO - Best Y: -91.99432842734521
+2024-01-13 15:31:20,215 - INFO - Elapsed time: 303.19 seconds
+2024-01-13 15:38:11,129 - INFO - Start experiment: mcts_rastrigin20d_1000
+2024-01-13 15:38:11,130 - INFO - ==================================================
+2024-01-13 15:38:11,130 - INFO - Config:
+2024-01-13 15:38:11,130 - INFO - seed: 0
+2024-01-13 15:38:11,131 - INFO - Cp: 1.0
+2024-01-13 15:38:11,131 - INFO - leaf_size: 20
+2024-01-13 15:38:11,131 - INFO - node_selection_type: UCB
+2024-01-13 15:38:11,132 - INFO - initial_sampling_method: Sobol
+2024-01-13 15:38:11,141 - INFO - bounds: tensor([[-4.0000, -4.0000, -4.0000, -4.0000, -4.0000, -4.0000, -4.0000, -4.0000,
+         -4.0000, -4.0000, -4.0000, -4.0000, -4.0000, -4.0000, -4.0000, -4.0000,
+         -4.0000, -4.0000, -4.0000, -4.0000],
+        [ 5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,
+          5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,  5.1200,
+          5.1200,  5.1200,  5.1200,  5.1200]], device='cuda:0',
+       dtype=torch.float64)
+2024-01-13 15:38:11,141 - INFO - num_init: 40
+2024-01-13 15:38:11,141 - INFO - obj_func: Rastrigin()
+2024-01-13 15:38:11,141 - INFO - optimizer_type: turbo
+2024-01-13 15:38:11,142 - INFO - optimizer_params: {'batch_size': 4, 'acqf': 'ts', 'num_restarts': 10, 'raw_samples': 512}
+2024-01-13 15:38:11,142 - INFO - classifier_type: SVM
+2024-01-13 15:38:11,142 - INFO - classifier_params: {'kernel_type': 'rbf', 'gamma_type': 'auto'}
+2024-01-13 15:38:11,142 - INFO - ==================================================
+2024-01-13 15:38:12,819 - INFO - [44 in node 1] Best value: -286.048 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:38:13,454 - INFO - [48 in node 1] Best value: -286.048 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:14,483 - INFO - [52 in node 1] Best value: -278.839 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:38:15,538 - INFO - [56 in node 1] Best value: -278.839 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:16,236 - INFO - [60 in node 1] Best value: -278.839 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:38:17,144 - INFO - [64 in node 1] Best value: -257.032 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:38:17,697 - INFO - [68 in node 1] Best value: -257.032 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:18,758 - INFO - [72 in node 1] Best value: -257.032 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:38:19,579 - INFO - [76 in node 1] Best value: -257.032 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:38:20,485 - INFO - [80 in node 1] Best value: -257.032 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:38:21,270 - INFO - [84 in node 1] Best value: -257.032 | TR length: 0.400 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:38:21,966 - INFO - [88 in node 1] Best value: -244.712 | TR length: 0.400 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:38:22,914 - INFO - [92 in node 1] Best value: -244.712 | TR length: 0.400 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:23,629 - INFO - [96 in node 1] Best value: -244.712 | TR length: 0.400 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:38:24,532 - INFO - [100 in node 1] Best value: -244.712 | TR length: 0.400 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:38:25,634 - INFO - [104 in node 1] Best value: -244.712 | TR length: 0.400 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:38:26,561 - INFO - [108 in node 1] Best value: -244.712 | TR length: 0.200 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:38:27,270 - INFO - [112 in node 1] Best value: -244.712 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:28,159 - INFO - [116 in node 1] Best value: -211.120 | TR length: 0.200 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:38:28,836 - INFO - [120 in node 1] Best value: -211.120 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:29,754 - INFO - [124 in node 1] Best value: -211.120 | TR length: 0.200 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:38:30,754 - INFO - [128 in node 1] Best value: -211.120 | TR length: 0.200 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:38:31,806 - INFO - [132 in node 1] Best value: -211.120 | TR length: 0.200 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:38:32,873 - INFO - [136 in node 1] Best value: -211.120 | TR length: 0.100 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:38:33,985 - INFO - [140 in node 1] Best value: -211.120 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:34,904 - INFO - [144 in node 1] Best value: -211.120 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:38:36,561 - INFO - [148 in node 1] Best value: -211.120 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:38:37,487 - INFO - [152 in node 1] Best value: -209.131 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:38:38,465 - INFO - [156 in node 1] Best value: -209.131 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:39,305 - INFO - [160 in node 1] Best value: -205.182 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:38:40,497 - INFO - [164 in node 1] Best value: -170.221 | TR length: 0.100 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:38:41,593 - INFO - [168 in node 1] Best value: -170.221 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:42,880 - INFO - [172 in node 1] Best value: -170.221 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:38:44,099 - INFO - [176 in node 1] Best value: -170.221 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:38:45,246 - INFO - [180 in node 1] Best value: -170.221 | TR length: 0.100 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:38:47,110 - INFO - [184 in node 1] Best value: -170.221 | TR length: 0.050 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:38:48,517 - INFO - [188 in node 1] Best value: -170.221 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:38:49,540 - INFO - [192 in node 1] Best value: -170.221 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:38:50,724 - INFO - [196 in node 1] Best value: -170.221 | TR length: 0.050 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:38:52,596 - INFO - [200 in node 1] Best value: -170.221 | TR length: 0.050 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:38:54,452 - INFO - [204 in node 1] Best value: -170.221 | TR length: 0.025 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:38:55,952 - INFO - [208 in node 1] Best value: -170.221 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:03,942 - INFO - [TuRBO] All attempts to fit the model have failed. For more information, try enabling botorch.settings.debug mode. happens when fitting model, restart.
+2024-01-13 15:39:04,135 - INFO - [212 in node 1] Best value: -141.196 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:05,603 - INFO - [216 in node 1] Best value: -141.196 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:06,842 - INFO - [220 in node 1] Best value: -141.196 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:39:07,933 - INFO - [224 in node 1] Best value: -131.783 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:09,206 - INFO - [228 in node 1] Best value: -131.783 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:10,541 - INFO - [232 in node 1] Best value: -131.783 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:39:12,324 - INFO - [236 in node 1] Best value: -131.783 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:39:13,780 - INFO - [240 in node 1] Best value: -131.783 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:39:15,274 - INFO - [244 in node 1] Best value: -129.345 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:16,823 - INFO - [248 in node 1] Best value: -129.345 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:18,254 - INFO - [252 in node 1] Best value: -129.345 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:39:20,451 - INFO - [256 in node 1] Best value: -129.345 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:39:21,881 - INFO - [260 in node 1] Best value: -126.632 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:23,519 - INFO - [264 in node 1] Best value: -126.632 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:25,513 - INFO - [268 in node 1] Best value: -126.632 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:39:27,063 - INFO - [272 in node 1] Best value: -119.343 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:28,831 - INFO - [276 in node 1] Best value: -119.343 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:31,030 - INFO - [280 in node 1] Best value: -119.343 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:39:33,002 - INFO - [284 in node 1] Best value: -111.945 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:35,292 - INFO - [288 in node 1] Best value: -111.945 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:37,050 - INFO - [292 in node 1] Best value: -108.850 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:39,105 - INFO - [296 in node 1] Best value: -99.030 | TR length: 0.025 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:39:40,714 - INFO - [300 in node 1] Best value: -96.473 | TR length: 0.025 | num. failures: 0/5 | num. successes: 3/10
+2024-01-13 15:39:42,560 - INFO - [304 in node 1] Best value: -96.473 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:44,497 - INFO - [308 in node 1] Best value: -96.473 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:39:46,748 - INFO - [312 in node 1] Best value: -96.473 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:39:48,390 - INFO - [316 in node 1] Best value: -96.148 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:49,923 - INFO - [320 in node 1] Best value: -96.148 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:51,599 - INFO - [324 in node 1] Best value: -96.148 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:39:53,412 - INFO - [328 in node 1] Best value: -88.007 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:55,362 - INFO - [332 in node 1] Best value: -88.007 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:57,167 - INFO - [336 in node 1] Best value: -84.003 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:39:58,529 - INFO - [340 in node 1] Best value: -84.003 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:39:59,832 - INFO - [344 in node 1] Best value: -84.003 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:01,286 - INFO - [348 in node 1] Best value: -83.054 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:40:03,247 - INFO - [352 in node 1] Best value: -81.169 | TR length: 0.025 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:40:04,734 - INFO - [356 in node 1] Best value: -81.169 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:06,275 - INFO - [360 in node 1] Best value: -81.169 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:07,562 - INFO - [364 in node 1] Best value: -81.169 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:40:08,971 - INFO - [368 in node 1] Best value: -81.169 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:40:10,350 - INFO - [372 in node 1] Best value: -81.169 | TR length: 0.013 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:40:11,905 - INFO - [376 in node 1] Best value: -78.982 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:40:13,512 - INFO - [380 in node 1] Best value: -76.918 | TR length: 0.013 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:40:15,162 - INFO - [384 in node 1] Best value: -76.696 | TR length: 0.013 | num. failures: 0/5 | num. successes: 3/10
+2024-01-13 15:40:16,989 - INFO - [388 in node 1] Best value: -76.696 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:18,617 - INFO - [392 in node 1] Best value: -76.696 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:20,189 - INFO - [396 in node 1] Best value: -76.696 | TR length: 0.013 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:40:21,868 - INFO - [400 in node 1] Best value: -76.696 | TR length: 0.013 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:40:23,292 - INFO - [404 in node 1] Best value: -76.696 | TR length: 0.006 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:40:23,293 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 404 evaluations
+2024-01-13 15:40:24,335 - INFO - [44 in node 13] Best value: -256.832 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:40:24,961 - INFO - [48 in node 13] Best value: -177.008 | TR length: 0.800 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:40:25,576 - INFO - [52 in node 13] Best value: -177.008 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:26,104 - INFO - [56 in node 13] Best value: -177.008 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:26,512 - INFO - [60 in node 13] Best value: -177.008 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:40:27,420 - INFO - [64 in node 13] Best value: -177.008 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:40:28,002 - INFO - [68 in node 13] Best value: -177.008 | TR length: 0.400 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:40:28,743 - INFO - [72 in node 13] Best value: -177.008 | TR length: 0.400 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:29,504 - INFO - [76 in node 13] Best value: -177.008 | TR length: 0.400 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:30,309 - INFO - [80 in node 13] Best value: -177.008 | TR length: 0.400 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:40:31,211 - INFO - [84 in node 13] Best value: -177.008 | TR length: 0.400 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:40:31,884 - INFO - [88 in node 13] Best value: -177.008 | TR length: 0.200 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:40:32,489 - INFO - [92 in node 13] Best value: -177.008 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:33,268 - INFO - [96 in node 13] Best value: -177.008 | TR length: 0.200 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:33,908 - INFO - [100 in node 13] Best value: -177.008 | TR length: 0.200 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:40:34,804 - INFO - [104 in node 13] Best value: -177.008 | TR length: 0.200 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:40:35,647 - INFO - [108 in node 13] Best value: -177.008 | TR length: 0.100 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:40:36,621 - INFO - [112 in node 13] Best value: -177.008 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:37,483 - INFO - [116 in node 13] Best value: -177.008 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:38,421 - INFO - [120 in node 13] Best value: -167.111 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:40:39,436 - INFO - [124 in node 13] Best value: -167.111 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:40,784 - INFO - [128 in node 13] Best value: -167.111 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:41,795 - INFO - [132 in node 13] Best value: -167.111 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:40:42,935 - INFO - [136 in node 13] Best value: -167.111 | TR length: 0.100 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:40:44,460 - INFO - [140 in node 13] Best value: -167.111 | TR length: 0.050 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:40:45,651 - INFO - [144 in node 13] Best value: -163.202 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:40:47,006 - INFO - [148 in node 13] Best value: -130.731 | TR length: 0.050 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:40:48,364 - INFO - [152 in node 13] Best value: -130.731 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:50,008 - INFO - [156 in node 13] Best value: -130.731 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:51,258 - INFO - [160 in node 13] Best value: -126.496 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:40:52,132 - INFO - [164 in node 13] Best value: -121.538 | TR length: 0.050 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:40:53,683 - INFO - [168 in node 13] Best value: -121.538 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:40:54,991 - INFO - [172 in node 13] Best value: -121.538 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:40:56,157 - INFO - [176 in node 13] Best value: -121.538 | TR length: 0.050 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:40:57,548 - INFO - [180 in node 13] Best value: -121.538 | TR length: 0.050 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:41:00,137 - INFO - [184 in node 13] Best value: -121.538 | TR length: 0.025 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:41:01,711 - INFO - [188 in node 13] Best value: -115.484 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:03,064 - INFO - [192 in node 13] Best value: -115.484 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:04,982 - INFO - [196 in node 13] Best value: -107.550 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:07,204 - INFO - [200 in node 13] Best value: -105.679 | TR length: 0.025 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:41:08,234 - INFO - [204 in node 13] Best value: -105.679 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:09,843 - INFO - [208 in node 13] Best value: -101.738 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:10,571 - INFO - [212 in node 13] Best value: -101.738 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:12,128 - INFO - [216 in node 13] Best value: -101.738 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:41:13,605 - INFO - [220 in node 13] Best value: -101.738 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:41:14,847 - INFO - [224 in node 13] Best value: -101.738 | TR length: 0.025 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:41:16,419 - INFO - [228 in node 13] Best value: -101.738 | TR length: 0.013 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:41:18,800 - INFO - [232 in node 13] Best value: -101.738 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:20,113 - INFO - [236 in node 13] Best value: -100.656 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:21,432 - INFO - [240 in node 13] Best value: -97.380 | TR length: 0.013 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:41:22,757 - INFO - [244 in node 13] Best value: -97.380 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:23,968 - INFO - [248 in node 13] Best value: -86.079 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:25,661 - INFO - [252 in node 13] Best value: -86.079 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:26,896 - INFO - [256 in node 13] Best value: -80.862 | TR length: 0.013 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:28,487 - INFO - [260 in node 13] Best value: -80.862 | TR length: 0.013 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:30,455 - INFO - [264 in node 13] Best value: -80.862 | TR length: 0.013 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:41:32,744 - INFO - [268 in node 13] Best value: -80.862 | TR length: 0.013 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:41:34,338 - INFO - [272 in node 13] Best value: -80.862 | TR length: 0.013 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:41:35,884 - INFO - [276 in node 13] Best value: -80.862 | TR length: 0.006 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:41:35,884 - INFO - [TuRBO] Local Modelling converges (TR length below threshold) after 276 evaluations
+2024-01-13 15:41:36,923 - INFO - [44 in node 7] Best value: -265.089 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:37,356 - INFO - [48 in node 7] Best value: -265.089 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:37,936 - INFO - [52 in node 7] Best value: -259.667 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:38,523 - INFO - [56 in node 7] Best value: -259.667 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:38,961 - INFO - [60 in node 7] Best value: -239.989 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:39,599 - INFO - [64 in node 7] Best value: -239.989 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:40,148 - INFO - [68 in node 7] Best value: -239.989 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:41:41,015 - INFO - [72 in node 7] Best value: -196.558 | TR length: 0.800 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:41,866 - INFO - [76 in node 7] Best value: -196.558 | TR length: 0.800 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:42,797 - INFO - [80 in node 7] Best value: -196.558 | TR length: 0.800 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:41:44,204 - INFO - [84 in node 7] Best value: -196.558 | TR length: 0.800 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:41:44,801 - INFO - [88 in node 7] Best value: -196.558 | TR length: 0.800 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:41:45,712 - INFO - [92 in node 7] Best value: -196.558 | TR length: 0.400 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:41:46,718 - INFO - [96 in node 7] Best value: -196.558 | TR length: 0.400 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:47,588 - INFO - [100 in node 7] Best value: -196.558 | TR length: 0.400 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:41:48,777 - INFO - [104 in node 7] Best value: -196.558 | TR length: 0.400 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:41:49,700 - INFO - [108 in node 7] Best value: -196.558 | TR length: 0.400 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:41:50,511 - INFO - [112 in node 7] Best value: -196.558 | TR length: 0.200 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:41:51,495 - INFO - [116 in node 7] Best value: -196.558 | TR length: 0.200 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:52,455 - INFO - [120 in node 7] Best value: -196.558 | TR length: 0.200 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:41:53,362 - INFO - [124 in node 7] Best value: -196.558 | TR length: 0.200 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:41:54,275 - INFO - [128 in node 7] Best value: -196.558 | TR length: 0.200 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:41:55,361 - INFO - [132 in node 7] Best value: -196.558 | TR length: 0.100 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:41:56,632 - INFO - [136 in node 7] Best value: -196.558 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:57,504 - INFO - [140 in node 7] Best value: -176.219 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:41:58,538 - INFO - [144 in node 7] Best value: -176.219 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:41:59,485 - INFO - [148 in node 7] Best value: -160.893 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:42:00,832 - INFO - [152 in node 7] Best value: -160.893 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:01,785 - INFO - [156 in node 7] Best value: -160.893 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:42:02,992 - INFO - [160 in node 7] Best value: -160.893 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:42:04,313 - INFO - [164 in node 7] Best value: -160.893 | TR length: 0.100 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:42:05,755 - INFO - [168 in node 7] Best value: -142.676 | TR length: 0.100 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:42:06,930 - INFO - [172 in node 7] Best value: -142.676 | TR length: 0.100 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:08,237 - INFO - [176 in node 7] Best value: -142.676 | TR length: 0.100 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:42:09,867 - INFO - [180 in node 7] Best value: -142.676 | TR length: 0.100 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:42:11,206 - INFO - [184 in node 7] Best value: -142.676 | TR length: 0.100 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:42:12,357 - INFO - [188 in node 7] Best value: -142.676 | TR length: 0.050 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:42:13,979 - INFO - [192 in node 7] Best value: -142.676 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:14,860 - INFO - [196 in node 7] Best value: -137.854 | TR length: 0.050 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:42:16,247 - INFO - [200 in node 7] Best value: -135.459 | TR length: 0.050 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:42:17,895 - INFO - [204 in node 7] Best value: -119.871 | TR length: 0.050 | num. failures: 0/5 | num. successes: 3/10
+2024-01-13 15:42:19,593 - INFO - [208 in node 7] Best value: -119.871 | TR length: 0.050 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:20,514 - INFO - [212 in node 7] Best value: -119.871 | TR length: 0.050 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:42:22,556 - INFO - [216 in node 7] Best value: -119.871 | TR length: 0.050 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:42:23,690 - INFO - [220 in node 7] Best value: -119.871 | TR length: 0.050 | num. failures: 4/5 | num. successes: 0/10
+2024-01-13 15:42:24,761 - INFO - [224 in node 7] Best value: -119.871 | TR length: 0.025 | num. failures: 0/5 | num. successes: 0/10
+2024-01-13 15:42:26,139 - INFO - [228 in node 7] Best value: -106.605 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:42:27,614 - INFO - [232 in node 7] Best value: -106.605 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:28,883 - INFO - [236 in node 7] Best value: -106.605 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:42:30,178 - INFO - [240 in node 7] Best value: -103.764 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:42:31,359 - INFO - [244 in node 7] Best value: -101.873 | TR length: 0.025 | num. failures: 0/5 | num. successes: 2/10
+2024-01-13 15:42:33,020 - INFO - [248 in node 7] Best value: -101.873 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:34,238 - INFO - [252 in node 7] Best value: -101.873 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:42:36,453 - INFO - [256 in node 7] Best value: -93.429 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:42:37,753 - INFO - [260 in node 7] Best value: -93.429 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:39,201 - INFO - [264 in node 7] Best value: -93.429 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:42:41,169 - INFO - [268 in node 7] Best value: -93.429 | TR length: 0.025 | num. failures: 3/5 | num. successes: 0/10
+2024-01-13 15:42:42,673 - INFO - [272 in node 7] Best value: -83.488 | TR length: 0.025 | num. failures: 0/5 | num. successes: 1/10
+2024-01-13 15:42:44,344 - INFO - [276 in node 7] Best value: -83.488 | TR length: 0.025 | num. failures: 1/5 | num. successes: 0/10
+2024-01-13 15:42:45,723 - INFO - [280 in node 7] Best value: -83.488 | TR length: 0.025 | num. failures: 2/5 | num. successes: 0/10
+2024-01-13 15:42:45,725 - INFO - --------------------------------------------------
+2024-01-13 15:42:45,727 - INFO - Best X: tensor([0.6577, 0.4349, 0.5433, 0.3317, 0.3293, 0.5489, 0.4402, 0.5535, 0.5503,
+        0.5448, 0.3292, 0.7660, 0.0011, 0.4395, 0.7687, 0.1085, 0.7651, 0.5468,
+        0.3317, 0.7662], device='cuda:0', dtype=torch.float64)
+2024-01-13 15:42:45,727 - INFO - Best Y: -76.54466394451788
+2024-01-13 15:42:45,727 - INFO - Elapsed time: 274.58 seconds
