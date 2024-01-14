@@ -36,6 +36,7 @@ import argparse
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_DIR = os.path.join(BASE_DIR, 'logs')
+IBEX_LOG_DIR = os.path.join(BASE_DIR, 'ibex_logs')
 
 FUNCTION_MAP: Dict[str, Any] = {
     'ackley': Ackley,
@@ -76,11 +77,13 @@ def main(args):
     elapsed_time = perf_counter() - start_time
 
     expr_name = f"{args.func}_{args.dims}_{args.iterations}_{args.solver_type}"
-    with open(os.path.join(LOG_DIR, expr_name + '_data.log'), 'w') as f:
+
+    log_dir = IBEX_LOG_DIR if args.ibex else LOG_DIR    
+    with open(os.path.join(log_dir, expr_name + '_data.log'), 'w') as f:
         for x, fx in samples:
             x = str(list(x))
             f.write(f'{fx}, {x}\n')
-    with open(os.path.join(LOG_DIR, expr_name + '.log'), 'w') as f:
+    with open(os.path.join(log_dir, expr_name + '.log'), 'w') as f:
         f.write(f'Best Function value: {np.max(fxs):.4f}\n')
         f.write(f'Elapsed time: {elapsed_time:3f} seconds\n')
         
@@ -91,6 +94,7 @@ if __name__ == '__main__':
     parser.add_argument('--dims', '-d', type=int, default=10, help='specify the problem dimensions')
     parser.add_argument('--iterations', '-n', type=int, default=1000, help='specify the iterations to collect in the search')
     parser.add_argument("--solver_type", '-s', type=str, default='bo', help="Type of local sampler")
+    parser.add_argument("--ibex", "-i", action="store_true", help="in Ibex environment")
     args = parser.parse_args()
 
     main(args)

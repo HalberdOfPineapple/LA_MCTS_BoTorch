@@ -11,19 +11,21 @@ def load_classifier(file_path):
         return pickle.load(file)
 
 # Function to plot decision boundaries for a list of classifiers
-def plot_decision_boundaries(classifiers, range_values, iteration_number, save_path):
-    xx, yy = np.meshgrid(np.linspace(range_values[0], range_values[1], 100),
-                         np.linspace(range_values[0], range_values[1], 100))
+def plot_decision_boundaries(classifiers, labels,  range_values, iteration_number, save_path):
+    xx, yy = np.meshgrid(np.linspace(range_values[0], range_values[1], 500),
+                         np.linspace(range_values[0], range_values[1], 500))
 
     plt.figure(figsize=(10, 10))
-    for clf in classifiers:
+    plane = np.ones(xx.shape)
+    for clf, label in zip(classifiers, labels):
         try:
-            Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
+            Z = clf.predict(np.c_[xx.ravel(), yy.ravel()]) == label
         except:
             continue
-        print(Z)
+        # print(Z)
         Z = Z.reshape(xx.shape)
-        plt.contour(xx, yy, Z, levels=[0], linewidths=2, colors='black')
+        plane = np.logical_and(plane, Z)
+    plt.contour(xx, yy, plane, levels=[0], linewidths=2, colors='black')
 
     plt.xlim(range_values)
     plt.ylim(range_values)
@@ -39,27 +41,40 @@ def main(expr_name):
     cls_dir = os.path.join(PATH_DIR, expr_name)
 
     # Get all .pkl files in the directory
-    all_files = [f for f in os.listdir(cls_dir) if f.endswith('.pkl')]
+    cls_files = [f for f in os.listdir(cls_dir) if f.endswith('.pkl')]
+    label_files = [f for f in os.listdir(cls_dir) if f.endswith('.txt')]
 
     # Partition file names by iteration number
     partitioned_files = {}
-    for file_name in all_files:
-        iteration_number = int(file_name.split('_')[0])
+    partitioned_label_files = {}
+    for cls_file, label_file in zip(cls_files, label_files):
+        iteration_number = int(cls_file.split('_')[0])
         if iteration_number not in partitioned_files:
             partitioned_files[iteration_number] = []
-        partitioned_files[iteration_number].append(file_name)
+            partitioned_label_files[iteration_number] = []
+        
+        partitioned_files[iteration_number].append(cls_file)
+        partitioned_label_files[iteration_number].append(label_file)
 
     classifiers_by_path = {}
+    labels_by_path = {}
     for iteration_number, files in partitioned_files.items():
         classifiers_by_path[iteration_number] = [
             load_classifier(os.path.join(cls_dir, file_name)) for file_name in files
         ]
+
+        labels_by_path[iteration_number] = []
+        for label_file in partitioned_label_files[iteration_number]:
+            with open(os.path.join(cls_dir, label_file), 'r') as file:
+                labels_by_path[iteration_number].append(int(file.read()))
+
     
     # Define the range for the plot
     range_values = (-10, 10)
-    for iteration_number, classifiers in classifiers_by_path.items():
+    for iteration_number in classifiers_by_path.keys():
         # Plot decision boundaries
-        plot_decision_boundaries(classifiers, range_values, iteration_number, cls_dir)
+        classifiers, labels = classifiers_by_path[iteration_number], labels_by_path[iteration_number]
+        plot_decision_boundaries(classifiers, labels, range_values, iteration_number, cls_dir)
 
 if __name__ == '__main__':
     expr_name = 'mcts_ackley2d_200'

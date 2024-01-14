@@ -2,7 +2,7 @@ import torch
 import math
 import numpy as np
 
-from typing import Dict, Tuple, List
+from typing import Dict, Tuple, List, Callable
 from classifier import CLASSIFIER_MAP, BaseClassifier
 
 class Node:
@@ -93,8 +93,49 @@ class Node:
         labels = self.classifier.predict(X)
         return labels
     
-    
+
     def save_classifier(self, classifier_save_path: str):
         import pickle
         with open(classifier_save_path,'wb') as f:
             pickle.dump(self.classifier.svm, f)
+
+    def plot_node_region(self, plot_save_path: str):
+        labels = self.classifier.predict(self.sample_bag[0])
+        pos_X, pos_Y = (
+            self.sample_bag[0][labels == self.classifier.pos_label].detach().cpu().numpy(),
+            self.sample_bag[1][labels == self.classifier.pos_label].detach().cpu().numpy())
+        pos_mean = np.mean(pos_Y)
+
+        neg_X, neg_Y = (
+            self.sample_bag[0][labels != self.classifier.pos_label].detach().cpu().numpy(),
+            self.sample_bag[1][labels != self.classifier.pos_label].detach().cpu().numpy())
+        neg_mean = np.mean(neg_Y)
+    
+        lbs = self.bounds.cpu().numpy()[0]
+        ubs = self.bounds.cpu().numpy()[1]
+        xx = np.linspace(lbs[0], ubs[0], 300)
+        yy = np.linspace(lbs[1], ubs[1], 300)
+
+        xv, yv = np.meshgrid(xx, yy)
+        pred_labels = self.classifier.predict(
+            torch.from_numpy(np.c_[xv.ravel(), yv.ravel()]).to(dtype=self.dtype, device=self.device))
+        pred_labels = pred_labels.reshape( xv.shape )
+
+        import matplotlib.pyplot as plt
+        fig, ax = plt.subplots()
+        ax.contourf(xv, yv, pred_labels, alpha=0.4)
+
+        ax.scatter(pos_X[:, 0], pos_X[:, 1], marker='o', 
+                   label=f"pos-{pos_mean:.2f}-{len(pos_X)}")
+        ax.scatter(neg_X[:, 0], neg_X[:, 1], marker='x',
+                   label=f"neg-{neg_mean:.2f}-{len(neg_X)}")
+        ax.legend(loc="best")
+
+        ax.set_xlabel('x1')
+        ax.set_ylabel('x2')
+        ax.set_xlim([lbs[0], ubs[0]])
+        ax.set_ylim([lbs[1], ubs[1]])
+    
+        plt.savefig(plot_save_path)
+        plt.close()
+        

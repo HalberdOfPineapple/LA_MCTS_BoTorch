@@ -1,5 +1,5 @@
 import torch
-
+import numpy as np
 from abc import ABC, abstractmethod
 from typing import Dict, List
 
@@ -81,7 +81,7 @@ class SVMClassifier(BaseClassifier):
         self.svm = self.svm.fit(X_scaled.detach().cpu().numpy(), labels)
 
     
-    def predict(self, X: torch.Tensor):
+    def predict(self, X: torch.Tensor) -> np.array:
         """
         Args:
             X: torch.Tensor - (num_samples, dimension)

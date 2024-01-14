@@ -165,15 +165,24 @@ class MCTS:
         else:
             raise ValueError(f"Node selection type {self.node_selection_type} not supported")
 
-    def plot_boundaries(self, path: List[Node]):
-        if self.dimension != 2:
-            raise ValueError(f"Plotting is only supported for 2D search space, but got {self.dimension}D")
-        
-        import matplotlib.pyplot as plt
-        import matplotlib.patches as patches
-        leaf_node: Node = path[-1]
-        leaf_X, leaf_Y = leaf_node.sample_bag[0].cpu().numpy(), leaf_node.sample_bag[1].cpu().numpy()
-        
+    def save_path_info(self, path: List['Node']):
+        if len(path) < 2:
+            return
+
+        svm_save_dir = os.path.join(PATH_DIR, get_expr_name())
+        if not os.path.exists(svm_save_dir): os.makedirs(svm_save_dir)
+        # for i in range(len(path) - 1):
+        #     node, child = path[i], path[i+1]
+        #     pkl_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.pkl')
+        #     node.save_classifier(pkl_path)
+
+        #     label_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.txt')
+        #     with open(label_path, 'w') as f:
+        #         f.write(f'{child.label}')
+
+        last_parent: Node = path[-2]
+        plot_path = os.path.join(svm_save_dir, f'{self.num_calls}_{last_parent.id}_.png')
+        last_parent.plot_node_region(plot_path)
 
     def select(self) -> List['Node']:
         curr_node: Node = self.root
@@ -186,17 +195,7 @@ class MCTS:
         
         check_path(path)
         if self.save_path:
-            svm_save_dir = os.path.join(PATH_DIR, get_expr_name())
-            if not os.path.exists(svm_save_dir): os.makedirs(svm_save_dir)
-            for i in range(len(path) - 1):
-                node, child = path[i], path[i+1]
-                pkl_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.pkl')
-                node.save_classifier(pkl_path)
-
-                label_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.txt')
-                with open(label_path, 'w') as f:
-                    f.write(f'{child.label}')
-                
+            self.save_path_info(path)
         return path
 
     def local_modelling(self, num_evals: int, path: List['Node'], bounds: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:

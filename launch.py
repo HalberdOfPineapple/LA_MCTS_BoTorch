@@ -5,7 +5,7 @@ import argparse
 from time import perf_counter
 
 from mcts import MCTS
-from utils import init_logger, get_logger, LOG_DIR, set_expr_name, print_log
+from utils import init_logger, get_logger, LOG_DIR, set_expr_name, print_log, IBEX_LOG_DIR
 from optimizer import OPTIMIZER_MAP
 from classifier import CLASSIFIER_MAP
 from turbo_1 import TuRBO as PlainTuRBO
@@ -50,9 +50,10 @@ def run_turbo_expr(expr_name: str, params: dict, num_runs: int, logger):
     logger.info(f"Best function value: {fxs.max().item()}")
     logger.info(f"Elapsed time: {elapsed_time:.2f} seconds")
 
+    log_dir = IBEX_LOG_DIR if args.ibex else LOG_DIR
     data_file_name = f"{expr_name}_data.log"
     xs, fxs = xs.detach().cpu().numpy(), fxs.detach().cpu().numpy()
-    with open(os.path.join(LOG_DIR, data_file_name), 'w') as f:
+    with open(os.path.join(log_dir, data_file_name), 'w') as f:
         for x, fx in zip(xs, fxs):
             x = str(list(x))
             f.write(f"{fx}, {x}\n")
@@ -60,7 +61,7 @@ def run_turbo_expr(expr_name: str, params: dict, num_runs: int, logger):
 
 def run_expr(benchmark_name: str, num_runs: int, method: str):
     expr_name = f"{method}_{benchmark_name}_{num_runs}"
-    init_logger(expr_name)
+    init_logger(expr_name, args.ibex)
     set_expr_name(expr_name)
     logger = get_logger()
 
@@ -89,9 +90,10 @@ def run_expr(benchmark_name: str, num_runs: int, method: str):
     logger.info(f"Best Y: {best_Y}")
     logger.info(f"Elapsed time: {elapsed_time:.2f} seconds")
 
+    log_dir = IBEX_LOG_DIR if args.ibex else LOG_DIR
     data_file_name = f"{expr_name}_data.log"
     xs, fxs = xs.detach().cpu().numpy(), fxs.detach().cpu().numpy()
-    with open(os.path.join(LOG_DIR, data_file_name), 'w') as f:
+    with open(os.path.join(log_dir, data_file_name), 'w') as f:
         for x, fx in zip(xs, fxs):
             x = str(list(x))
             f.write(f"{fx}, {x}\n")
@@ -102,6 +104,7 @@ if __name__ == "__main__":
     argparser.add_argument('--benchmark_name', '-e', type=str, default='ackley20d')
     argparser.add_argument('--num_runs', '-n', type=int, default=1000)
     argparser.add_argument('--method', '-m', type=str, default='mcts')
+    argparser.add_argument("--ibex", "-i", action="store_true", help="in Ibex environment")
     args = argparser.parse_args()
 
     run_expr(args.benchmark_name, args.num_runs, args.method)

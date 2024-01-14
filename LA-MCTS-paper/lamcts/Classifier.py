@@ -96,6 +96,7 @@ class Classifier():
         ax.scatter(self.X[ np.where(plabels == 0) , 0 ], self.X[ np.where(plabels == 0) , 1 ], marker='x', label="good-"+str(np.round(good_mean, 2))+"-"+str(good_counts) )
         ax.scatter(self.X[ np.where(plabels == 1) , 0 ], self.X[ np.where(plabels == 1) , 1 ], marker='x', label="bad-"+str(np.round(bad_mean, 2))+"-"+str(bad_counts)    )
         ax.legend(loc="best")
+        
         ax.set_xlabel('x1')
         ax.set_ylabel('x2')
         ax.set_xlim([-10, 10])
