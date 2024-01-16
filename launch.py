@@ -7,6 +7,7 @@ from time import perf_counter
 from mcts import MCTS
 from utils import init_logger, get_logger, LOG_DIR, set_expr_name, print_log, IBEX_LOG_DIR
 from turbo_1 import TuRBO as PlainTuRBO
+from gp_ei import GPEI
 from benchmarks import BENCHMARK_MAP
 
 dtype = torch.double
@@ -14,6 +15,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else "cpu")
 MODEL_CLS_MAP = {
     'mcts': MCTS, 
     'turbo': PlainTuRBO,
+    'gp_ei': GPEI,
 }
 
 def run_expr(benchmark_name: str, num_runs: int, method: str):
@@ -25,13 +27,12 @@ def run_expr(benchmark_name: str, num_runs: int, method: str):
     benchmark, kwargs = BENCHMARK_MAP[benchmark_name.lower()]
     benchmark = benchmark(**kwargs)
     params: dict = benchmark.to_dict()
-    if method.lower() == 'turbo':
+    if method.lower() == 'turbo' or method.lower() == 'gp_ei':
         params = {
             'obj_func': params['obj_func'],
             'bounds': params['bounds'],
             'batch_size': params['optimizer_params']['batch_size'],
             'n_init': params['num_init'],
-            'num_evals': num_runs,
             'seed': params['seed'],
             'acqf_func': params['optimizer_params'].get('acqf', 'ts'),
             'max_cholesky_size': params['optimizer_params'].get('max_cholesky_size', float('inf')),

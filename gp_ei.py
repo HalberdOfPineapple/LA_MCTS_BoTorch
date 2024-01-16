@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from typing import Callable, Optional, Tuple, Union, List
 
 import botorch
-from botorch.acquisition import qExpectedImprovement
+from botorch.acquisition import qExpectedImprovement, ExpectedImprovement
 from botorch.fit import fit_gpytorch_mll
 from botorch.generation import MaxPosteriorSampling
 from botorch.models import SingleTaskGP
@@ -37,13 +37,12 @@ class GPEI:
     def __init__(
         self, 
         obj_func: Callable, 
-        num_evals: int,
         bounds: torch.Tensor,
         batch_size: int, 
         n_init: int=20, 
         seed: int=0, 
         max_cholesky_size:float=float("inf"),
-        acqf_func:str = "ts",
+        **kwargs,
     ):
         self.obj_func = obj_func
 
@@ -54,15 +53,12 @@ class GPEI:
 
         self.batch_size = batch_size
         self.n_init = n_init
-        self.num_evals = num_evals
         self.num_calls = 0
 
         self.seed = seed
         self.max_cholesky_size = max_cholesky_size
 
-        if acqf_func not in ACQFS:
-            raise ValueError(f"Acquisition function {acqf_func} not supported")
-        self.acqf_func = acqf_func
+        self.acqf_func = qExpectedImprovement
     
     def init_samples(self, num_init: int):
         X_init = get_initial_points(self.dimension, num_init, self.seed)
@@ -73,27 +69,27 @@ class GPEI:
         self.num_calls += len(X_init)
         return X_init, Y_init
 
-    def optimize(self) -> Tuple[torch.Tensor, torch.Tensor]:
+    def optimize(self, num_evals: int) -> Tuple[torch.Tensor, torch.Tensor]:
         num_restarts = 10 if not SMOKE_TEST else 2
         raw_samples = 512 if not SMOKE_TEST else 4
         n_candidates =  min(5000, max(2000, 200 * self.dimension)) if not SMOKE_TEST else 4
 
         torch.manual_seed(self.seed)
 
-        num_init = min(self.n_init, self.num_evals - self.num_calls)
+        num_init = min(self.n_init, num_evals - self.num_calls)
         X_sampled, Y_sampled = self.init_samples(num_init)
         
-        while self.num_calls < self.num_evals:
+        while self.num_calls < num_evals:
+            batch_size = min(self.batch_size, num_evals - self.num_calls)
+
             train_Y = standardize(Y_sampled)
-            # train_Y = normalize(train_Y, self.bounds)
 
             likelihood = GaussianLikelihood(noise_constraint=Interval(1e-8, 1e-3))
             model = SingleTaskGP(X_sampled, train_Y, likelihood=likelihood)
             mll = ExactMarginalLogLikelihood(model.likelihood, model)
             fit_gpytorch_mll(mll)
 
-            batch_size = min(self.batch_size, self.num_evals - self.num_calls)
-            ei = qExpectedImprovement(model=model, best_f=train_Y.max())
+            ei = self.acqf_func(model=model, best_f=train_Y.max())
             X_next, acq_value = optimize_acqf(
                 ei,
                 bounds =torch.stack([
@@ -110,7 +106,7 @@ class GPEI:
 
             X_sampled = torch.cat((X_sampled, X_next), dim=0)
             Y_sampled = torch.cat((Y_sampled, Y_next), dim=0)
-            self.num_evals += len(X_next)
+            self.num_calls += len(X_next)
         
             log_msg = (
                     f"Sample {len(X_sampled) + len(self.X)} | "
@@ -120,7 +116,9 @@ class GPEI:
 
         self.X = torch.cat((self.X, X_sampled), dim=0)
         self.Y = torch.cat((self.Y, Y_sampled), dim=0)
-        return self.X, self.Y
+        best_x = self.X[self.Y.argmax()]
+        best_y = self.Y.max()
+        return self.X, self.Y, best_x, best_y
 
     
 def test_ackley_20():

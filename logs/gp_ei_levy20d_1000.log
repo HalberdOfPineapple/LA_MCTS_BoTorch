@@ -1,0 +1,324 @@
+2024-01-16 11:40:01,922 - INFO - Start experiment: gp_ei_levy20d_1000
+2024-01-16 11:40:01,922 - INFO - ==================================================
+2024-01-16 11:40:01,922 - INFO - Config:
+2024-01-16 11:40:01,922 - INFO - obj_func: Levy()
+2024-01-16 11:40:02,001 - INFO - bounds: tensor([[-10., -10., -10., -10., -10., -10., -10., -10., -10., -10., -10., -10.,
+         -10., -10., -10., -10., -10., -10., -10., -10.],
+        [ 10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,
+          10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.]], device='cuda:0',
+       dtype=torch.float64)
+2024-01-16 11:40:02,001 - INFO - batch_size: 4
+2024-01-16 11:40:02,001 - INFO - n_init: 40
+2024-01-16 11:40:02,001 - INFO - seed: 0
+2024-01-16 11:40:02,001 - INFO - acqf_func: ts
+2024-01-16 11:40:02,001 - INFO - max_cholesky_size: inf
+2024-01-16 11:40:02,001 - INFO - ==================================================
+2024-01-16 11:40:08,877 - INFO - Sample 44 | Best value: -103.59 |
+2024-01-16 11:40:16,356 - INFO - Sample 48 | Best value: -91.68 |
+2024-01-16 11:40:21,998 - INFO - Sample 52 | Best value: -91.68 |
+2024-01-16 11:40:32,112 - INFO - Sample 56 | Best value: -78.61 |
+2024-01-16 11:40:42,230 - INFO - Sample 60 | Best value: -56.29 |
+2024-01-16 11:40:42,577 - INFO - Sample 64 | Best value: -56.29 |
+2024-01-16 11:40:47,878 - INFO - Sample 68 | Best value: -56.29 |
+2024-01-16 11:40:52,156 - INFO - Sample 72 | Best value: -55.47 |
+2024-01-16 11:40:55,832 - INFO - Sample 76 | Best value: -55.47 |
+2024-01-16 11:40:59,977 - INFO - Sample 80 | Best value: -49.86 |
+2024-01-16 11:41:05,739 - INFO - Sample 84 | Best value: -49.86 |
+2024-01-16 11:41:06,883 - INFO - Sample 88 | Best value: -27.34 |
+2024-01-16 11:41:09,929 - INFO - Sample 92 | Best value: -27.34 |
+2024-01-16 11:41:16,895 - INFO - Sample 96 | Best value: -27.01 |
+2024-01-16 11:41:21,884 - INFO - Sample 100 | Best value: -23.81 |
+2024-01-16 11:41:26,021 - INFO - Sample 104 | Best value: -23.81 |
+2024-01-16 11:41:30,537 - INFO - Sample 108 | Best value: -23.81 |
+2024-01-16 11:41:34,528 - INFO - Sample 112 | Best value: -13.31 |
+2024-01-16 11:41:36,230 - INFO - Sample 116 | Best value: -13.31 |
+2024-01-16 11:41:39,356 - INFO - Sample 120 | Best value: -13.31 |
+2024-01-16 11:41:40,612 - INFO - Sample 124 | Best value: -12.55 |
+2024-01-16 11:41:43,898 - INFO - Sample 128 | Best value: -12.55 |
+2024-01-16 11:41:44,826 - INFO - Sample 132 | Best value: -12.55 |
+2024-01-16 11:41:47,140 - INFO - Sample 136 | Best value: -12.30 |
+2024-01-16 11:41:48,235 - INFO - Sample 140 | Best value: -11.70 |
+2024-01-16 11:41:49,743 - INFO - Sample 144 | Best value: -11.70 |
+2024-01-16 11:42:07,670 - INFO - Start experiment: gp_ei_levy20d_1000
+2024-01-16 11:42:07,670 - INFO - ==================================================
+2024-01-16 11:42:07,671 - INFO - Config:
+2024-01-16 11:42:07,671 - INFO - obj_func: Levy()
+2024-01-16 11:42:07,758 - INFO - bounds: tensor([[-10., -10., -10., -10., -10., -10., -10., -10., -10., -10., -10., -10.,
+         -10., -10., -10., -10., -10., -10., -10., -10.],
+        [ 10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,
+          10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.]], device='cuda:0',
+       dtype=torch.float64)
+2024-01-16 11:42:07,758 - INFO - batch_size: 4
+2024-01-16 11:42:07,758 - INFO - n_init: 40
+2024-01-16 11:42:07,758 - INFO - seed: 0
+2024-01-16 11:42:07,758 - INFO - acqf_func: ts
+2024-01-16 11:42:07,758 - INFO - max_cholesky_size: inf
+2024-01-16 11:42:07,759 - INFO - ==================================================
+2024-01-16 11:42:14,491 - INFO - Sample 44 | Best value: -103.59 |
+2024-01-16 11:42:21,507 - INFO - Sample 48 | Best value: -91.68 |
+2024-01-16 11:42:27,090 - INFO - Sample 52 | Best value: -91.68 |
+2024-01-16 11:42:36,740 - INFO - Sample 56 | Best value: -78.61 |
+2024-01-16 11:42:46,560 - INFO - Sample 60 | Best value: -56.29 |
+2024-01-16 11:42:46,880 - INFO - Sample 64 | Best value: -56.29 |
+2024-01-16 11:42:52,001 - INFO - Sample 68 | Best value: -56.29 |
+2024-01-16 11:45:09,258 - INFO - Start experiment: gp_ei_levy20d_1000
+2024-01-16 11:45:09,258 - INFO - ==================================================
+2024-01-16 11:45:09,258 - INFO - Config:
+2024-01-16 11:45:09,259 - INFO - obj_func: Levy()
+2024-01-16 11:45:09,345 - INFO - bounds: tensor([[-10., -10., -10., -10., -10., -10., -10., -10., -10., -10., -10., -10.,
+         -10., -10., -10., -10., -10., -10., -10., -10.],
+        [ 10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.,
+          10.,  10.,  10.,  10.,  10.,  10.,  10.,  10.]], device='cuda:0',
+       dtype=torch.float64)
+2024-01-16 11:45:09,345 - INFO - batch_size: 4
+2024-01-16 11:45:09,345 - INFO - n_init: 40
+2024-01-16 11:45:09,346 - INFO - seed: 0
+2024-01-16 11:45:09,346 - INFO - acqf_func: ts
+2024-01-16 11:45:09,346 - INFO - max_cholesky_size: inf
+2024-01-16 11:45:09,346 - INFO - ==================================================
+2024-01-16 11:45:15,964 - INFO - Sample 44 | Best value: -103.59 |
+2024-01-16 11:45:23,117 - INFO - Sample 48 | Best value: -91.68 |
+2024-01-16 11:45:28,425 - INFO - Sample 52 | Best value: -91.68 |
+2024-01-16 11:45:37,811 - INFO - Sample 56 | Best value: -78.61 |
+2024-01-16 11:45:47,117 - INFO - Sample 60 | Best value: -56.29 |
+2024-01-16 11:45:47,447 - INFO - Sample 64 | Best value: -56.29 |
+2024-01-16 11:45:52,508 - INFO - Sample 68 | Best value: -56.29 |
+2024-01-16 11:45:56,420 - INFO - Sample 72 | Best value: -55.47 |
+2024-01-16 11:45:59,900 - INFO - Sample 76 | Best value: -55.47 |
+2024-01-16 11:46:03,819 - INFO - Sample 80 | Best value: -49.86 |
+2024-01-16 11:46:09,213 - INFO - Sample 84 | Best value: -49.86 |
+2024-01-16 11:46:10,267 - INFO - Sample 88 | Best value: -27.34 |
+2024-01-16 11:46:13,160 - INFO - Sample 92 | Best value: -27.34 |
+2024-01-16 11:46:19,899 - INFO - Sample 96 | Best value: -27.01 |
+2024-01-16 11:46:24,775 - INFO - Sample 100 | Best value: -23.81 |
+2024-01-16 11:46:28,828 - INFO - Sample 104 | Best value: -23.81 |
+2024-01-16 11:46:33,259 - INFO - Sample 108 | Best value: -23.81 |
+2024-01-16 11:46:37,232 - INFO - Sample 112 | Best value: -13.31 |
+2024-01-16 11:46:38,935 - INFO - Sample 116 | Best value: -13.31 |
+2024-01-16 11:46:41,962 - INFO - Sample 120 | Best value: -13.31 |
+2024-01-16 11:46:43,194 - INFO - Sample 124 | Best value: -12.55 |
+2024-01-16 11:46:46,436 - INFO - Sample 128 | Best value: -12.55 |
+2024-01-16 11:46:47,343 - INFO - Sample 132 | Best value: -12.55 |
+2024-01-16 11:46:49,486 - INFO - Sample 136 | Best value: -12.30 |
+2024-01-16 11:46:50,529 - INFO - Sample 140 | Best value: -11.70 |
+2024-01-16 11:46:52,004 - INFO - Sample 144 | Best value: -11.70 |
+2024-01-16 11:46:54,337 - INFO - Sample 148 | Best value: -11.70 |
+2024-01-16 11:46:57,826 - INFO - Sample 152 | Best value: -8.99 |
+2024-01-16 11:46:58,668 - INFO - Sample 156 | Best value: -8.99 |
+2024-01-16 11:46:59,723 - INFO - Sample 160 | Best value: -8.99 |
+2024-01-16 11:47:00,469 - INFO - Sample 164 | Best value: -8.99 |
+2024-01-16 11:47:01,216 - INFO - Sample 168 | Best value: -8.99 |
+2024-01-16 11:47:02,064 - INFO - Sample 172 | Best value: -8.99 |
+2024-01-16 11:47:03,815 - INFO - Sample 176 | Best value: -8.98 |
+2024-01-16 11:47:04,796 - INFO - Sample 180 | Best value: -8.98 |
+2024-01-16 11:47:06,136 - INFO - Sample 184 | Best value: -8.74 |
+2024-01-16 11:47:07,237 - INFO - Sample 188 | Best value: -8.74 |
+2024-01-16 11:47:08,140 - INFO - Sample 192 | Best value: -8.74 |
+2024-01-16 11:47:09,060 - INFO - Sample 196 | Best value: -8.74 |
+2024-01-16 11:47:11,013 - INFO - Sample 200 | Best value: -7.79 |
+2024-01-16 11:47:12,242 - INFO - Sample 204 | Best value: -7.79 |
+2024-01-16 11:47:13,752 - INFO - Sample 208 | Best value: -7.79 |
+2024-01-16 11:47:14,895 - INFO - Sample 212 | Best value: -7.79 |
+2024-01-16 11:47:16,162 - INFO - Sample 216 | Best value: -7.79 |
+2024-01-16 11:47:17,244 - INFO - Sample 220 | Best value: -7.79 |
+2024-01-16 11:47:18,836 - INFO - Sample 224 | Best value: -7.79 |
+2024-01-16 11:47:19,453 - INFO - Sample 228 | Best value: -7.79 |
+2024-01-16 11:47:20,372 - INFO - Sample 232 | Best value: -7.79 |
+2024-01-16 11:47:21,159 - INFO - Sample 236 | Best value: -7.79 |
+2024-01-16 11:47:30,552 - INFO - Sample 240 | Best value: -7.79 |
+2024-01-16 11:47:31,886 - INFO - Sample 244 | Best value: -7.79 |
+2024-01-16 11:47:33,321 - INFO - Sample 248 | Best value: -7.79 |
+2024-01-16 11:47:41,947 - INFO - Sample 252 | Best value: -7.79 |
+2024-01-16 11:47:43,472 - INFO - Sample 256 | Best value: -7.79 |
+2024-01-16 11:47:44,467 - INFO - Sample 260 | Best value: -7.79 |
+2024-01-16 11:47:45,589 - INFO - Sample 264 | Best value: -7.79 |
+2024-01-16 11:47:50,588 - INFO - Sample 268 | Best value: -7.79 |
+2024-01-16 11:47:52,671 - INFO - Sample 272 | Best value: -7.79 |
+2024-01-16 11:47:55,582 - INFO - Sample 276 | Best value: -7.79 |
+2024-01-16 11:48:03,591 - INFO - Sample 280 | Best value: -7.79 |
+2024-01-16 11:48:04,329 - INFO - Sample 284 | Best value: -7.79 |
+2024-01-16 11:48:05,792 - INFO - Sample 288 | Best value: -7.79 |
+2024-01-16 11:48:06,817 - INFO - Sample 292 | Best value: -7.79 |
+2024-01-16 11:48:10,395 - INFO - Sample 296 | Best value: -7.79 |
+2024-01-16 11:48:16,356 - INFO - Sample 300 | Best value: -7.79 |
+2024-01-16 11:48:17,174 - INFO - Sample 304 | Best value: -7.79 |
+2024-01-16 11:48:17,929 - INFO - Sample 308 | Best value: -7.79 |
+2024-01-16 11:48:20,165 - INFO - Sample 312 | Best value: -7.79 |
+2024-01-16 11:48:21,742 - INFO - Sample 316 | Best value: -7.79 |
+2024-01-16 11:48:22,900 - INFO - Sample 320 | Best value: -7.79 |
+2024-01-16 11:48:24,679 - INFO - Sample 324 | Best value: -7.79 |
+2024-01-16 11:48:26,100 - INFO - Sample 328 | Best value: -7.79 |
+2024-01-16 11:48:26,854 - INFO - Sample 332 | Best value: -7.79 |
+2024-01-16 11:48:28,071 - INFO - Sample 336 | Best value: -7.79 |
+2024-01-16 11:48:34,588 - INFO - Sample 340 | Best value: -7.79 |
+2024-01-16 11:48:36,390 - INFO - Sample 344 | Best value: -7.79 |
+2024-01-16 11:48:37,750 - INFO - Sample 348 | Best value: -7.79 |
+2024-01-16 11:48:39,914 - INFO - Sample 352 | Best value: -7.79 |
+2024-01-16 11:48:45,580 - INFO - Sample 356 | Best value: -7.79 |
+2024-01-16 11:48:47,492 - INFO - Sample 360 | Best value: -7.79 |
+2024-01-16 11:48:48,754 - INFO - Sample 364 | Best value: -7.79 |
+2024-01-16 11:48:50,794 - INFO - Sample 368 | Best value: -7.79 |
+2024-01-16 11:48:54,189 - INFO - Sample 372 | Best value: -7.79 |
+2024-01-16 11:48:55,143 - INFO - Sample 376 | Best value: -7.79 |
+2024-01-16 11:49:04,868 - INFO - Sample 380 | Best value: -7.79 |
+2024-01-16 11:49:09,182 - INFO - Sample 384 | Best value: -7.79 |
+2024-01-16 11:49:10,847 - INFO - Sample 388 | Best value: -7.79 |
+2024-01-16 11:49:12,155 - INFO - Sample 392 | Best value: -7.79 |
+2024-01-16 11:49:13,410 - INFO - Sample 396 | Best value: -7.79 |
+2024-01-16 11:49:14,791 - INFO - Sample 400 | Best value: -7.79 |
+2024-01-16 11:49:16,667 - INFO - Sample 404 | Best value: -7.79 |
+2024-01-16 11:49:20,592 - INFO - Sample 408 | Best value: -7.79 |
+2024-01-16 11:49:21,355 - INFO - Sample 412 | Best value: -7.79 |
+2024-01-16 11:49:22,965 - INFO - Sample 416 | Best value: -7.79 |
+2024-01-16 11:49:31,363 - INFO - Sample 420 | Best value: -7.79 |
+2024-01-16 11:49:32,690 - INFO - Sample 424 | Best value: -7.79 |
+2024-01-16 11:49:34,093 - INFO - Sample 428 | Best value: -7.79 |
+2024-01-16 11:49:44,029 - INFO - Sample 432 | Best value: -7.79 |
+2024-01-16 11:49:44,713 - INFO - Sample 436 | Best value: -7.79 |
+2024-01-16 11:49:51,314 - INFO - Sample 440 | Best value: -7.79 |
+2024-01-16 11:49:59,855 - INFO - Sample 444 | Best value: -7.79 |
+2024-01-16 11:50:00,548 - INFO - Sample 448 | Best value: -7.79 |
+2024-01-16 11:50:01,141 - INFO - Sample 452 | Best value: -7.79 |
+2024-01-16 11:50:03,088 - INFO - Sample 456 | Best value: -7.79 |
+2024-01-16 11:50:06,174 - INFO - Sample 460 | Best value: -7.79 |
+2024-01-16 11:50:11,665 - INFO - Sample 464 | Best value: -7.79 |
+2024-01-16 11:50:12,244 - INFO - Sample 468 | Best value: -7.79 |
+2024-01-16 11:50:12,969 - INFO - Sample 472 | Best value: -7.79 |
+2024-01-16 11:50:14,360 - INFO - Sample 476 | Best value: -7.79 |
+2024-01-16 11:50:16,258 - INFO - Sample 480 | Best value: -7.79 |
+2024-01-16 11:50:17,052 - INFO - Sample 484 | Best value: -7.79 |
+2024-01-16 11:50:18,052 - INFO - Sample 488 | Best value: -7.79 |
+2024-01-16 11:50:20,498 - INFO - Sample 492 | Best value: -7.79 |
+2024-01-16 11:50:21,247 - INFO - Sample 496 | Best value: -7.79 |
+2024-01-16 11:50:22,570 - INFO - Sample 500 | Best value: -7.79 |
+2024-01-16 11:50:24,960 - INFO - Sample 504 | Best value: -7.79 |
+2024-01-16 11:50:27,034 - INFO - Sample 508 | Best value: -7.79 |
+2024-01-16 11:50:27,828 - INFO - Sample 512 | Best value: -7.79 |
+2024-01-16 11:50:30,491 - INFO - Sample 516 | Best value: -7.79 |
+2024-01-16 11:50:34,804 - INFO - Sample 520 | Best value: -7.79 |
+2024-01-16 11:50:36,232 - INFO - Sample 524 | Best value: -7.79 |
+2024-01-16 11:50:36,710 - INFO - Sample 528 | Best value: -7.79 |
+2024-01-16 11:50:37,449 - INFO - Sample 532 | Best value: -7.79 |
+2024-01-16 11:50:39,757 - INFO - Sample 536 | Best value: -7.79 |
+2024-01-16 11:50:43,836 - INFO - Sample 540 | Best value: -7.79 |
+2024-01-16 11:50:47,683 - INFO - Sample 544 | Best value: -7.79 |
+2024-01-16 11:50:48,496 - INFO - Sample 548 | Best value: -7.79 |
+2024-01-16 11:50:54,001 - INFO - Sample 552 | Best value: -7.79 |
+2024-01-16 11:50:54,794 - INFO - Sample 556 | Best value: -7.79 |
+2024-01-16 11:50:55,409 - INFO - Sample 560 | Best value: -7.79 |
+2024-01-16 11:50:56,138 - INFO - Sample 564 | Best value: -7.79 |
+2024-01-16 11:50:56,956 - INFO - Sample 568 | Best value: -7.79 |
+2024-01-16 11:50:58,720 - INFO - Sample 572 | Best value: -7.79 |
+2024-01-16 11:51:02,111 - INFO - Sample 576 | Best value: -6.34 |
+2024-01-16 11:51:02,724 - INFO - Sample 580 | Best value: -6.34 |
+2024-01-16 11:51:03,629 - INFO - Sample 584 | Best value: -6.34 |
+2024-01-16 11:51:04,132 - INFO - Sample 588 | Best value: -6.34 |
+2024-01-16 11:51:05,016 - INFO - Sample 592 | Best value: -6.34 |
+2024-01-16 11:51:07,662 - INFO - Sample 596 | Best value: -6.34 |
+2024-01-16 11:51:17,129 - INFO - Sample 600 | Best value: -6.34 |
+2024-01-16 11:51:17,912 - INFO - Sample 604 | Best value: -6.34 |
+2024-01-16 11:51:18,773 - INFO - Sample 608 | Best value: -6.34 |
+2024-01-16 11:51:19,500 - INFO - Sample 612 | Best value: -6.34 |
+2024-01-16 11:51:24,665 - INFO - Sample 616 | Best value: -6.34 |
+2024-01-16 11:51:25,248 - INFO - Sample 620 | Best value: -6.34 |
+2024-01-16 11:51:25,771 - INFO - Sample 624 | Best value: -6.34 |
+2024-01-16 11:51:26,921 - INFO - Sample 628 | Best value: -6.34 |
+2024-01-16 11:51:28,273 - INFO - Sample 632 | Best value: -6.34 |
+2024-01-16 11:51:29,429 - INFO - Sample 636 | Best value: -6.34 |
+2024-01-16 11:51:31,392 - INFO - Sample 640 | Best value: -6.34 |
+2024-01-16 11:51:32,262 - INFO - Sample 644 | Best value: -6.30 |
+2024-01-16 11:51:33,181 - INFO - Sample 648 | Best value: -6.30 |
+2024-01-16 11:51:33,691 - INFO - Sample 652 | Best value: -6.30 |
+2024-01-16 11:51:34,352 - INFO - Sample 656 | Best value: -6.30 |
+2024-01-16 11:51:36,243 - INFO - Sample 660 | Best value: -6.30 |
+2024-01-16 11:51:40,355 - INFO - Sample 664 | Best value: -6.30 |
+2024-01-16 11:51:40,967 - INFO - Sample 668 | Best value: -6.30 |
+2024-01-16 11:51:46,340 - INFO - Sample 672 | Best value: -6.30 |
+2024-01-16 11:51:48,080 - INFO - Sample 676 | Best value: -6.30 |
+2024-01-16 11:51:50,702 - INFO - Sample 680 | Best value: -6.30 |
+2024-01-16 11:51:52,458 - INFO - Sample 684 | Best value: -6.30 |
+2024-01-16 11:51:54,452 - INFO - Sample 688 | Best value: -6.30 |
+2024-01-16 11:51:55,347 - INFO - Sample 692 | Best value: -6.30 |
+2024-01-16 11:51:59,551 - INFO - Sample 696 | Best value: -6.30 |
+2024-01-16 11:52:01,744 - INFO - Sample 700 | Best value: -6.30 |
+2024-01-16 11:52:02,561 - INFO - Sample 704 | Best value: -6.30 |
+2024-01-16 11:52:03,947 - INFO - Sample 708 | Best value: -6.30 |
+2024-01-16 11:52:04,551 - INFO - Sample 712 | Best value: -6.30 |
+2024-01-16 11:52:05,129 - INFO - Sample 716 | Best value: -6.30 |
+2024-01-16 11:52:05,668 - INFO - Sample 720 | Best value: -6.30 |
+2024-01-16 11:52:14,893 - INFO - Sample 724 | Best value: -6.30 |
+2024-01-16 11:52:23,735 - INFO - Sample 728 | Best value: -6.30 |
+2024-01-16 11:52:24,189 - INFO - Sample 732 | Best value: -6.30 |
+2024-01-16 11:52:24,892 - INFO - Sample 736 | Best value: -6.30 |
+2024-01-16 11:52:25,533 - INFO - Sample 740 | Best value: -6.30 |
+2024-01-16 11:52:26,007 - INFO - Sample 744 | Best value: -6.30 |
+2024-01-16 11:52:32,386 - INFO - Sample 748 | Best value: -6.30 |
+2024-01-16 11:52:33,576 - INFO - Sample 752 | Best value: -6.30 |
+2024-01-16 11:52:39,755 - INFO - Sample 756 | Best value: -6.30 |
+2024-01-16 11:52:40,598 - INFO - Sample 760 | Best value: -6.30 |
+2024-01-16 11:52:41,380 - INFO - Sample 764 | Best value: -6.30 |
+2024-01-16 11:52:41,931 - INFO - Sample 768 | Best value: -6.30 |
+2024-01-16 11:52:48,148 - INFO - Sample 772 | Best value: -6.30 |
+2024-01-16 11:52:52,312 - INFO - Sample 776 | Best value: -5.84 |
+2024-01-16 11:52:54,091 - INFO - Sample 780 | Best value: -4.98 |
+2024-01-16 11:52:55,363 - INFO - Sample 784 | Best value: -4.98 |
+2024-01-16 11:52:56,135 - INFO - Sample 788 | Best value: -4.98 |
+2024-01-16 11:52:56,605 - INFO - Sample 792 | Best value: -4.98 |
+2024-01-16 11:52:57,073 - INFO - Sample 796 | Best value: -4.98 |
+2024-01-16 11:53:04,392 - INFO - Sample 800 | Best value: -4.98 |
+2024-01-16 11:53:04,895 - INFO - Sample 804 | Best value: -4.98 |
+2024-01-16 11:53:05,657 - INFO - Sample 808 | Best value: -4.98 |
+2024-01-16 11:53:06,764 - INFO - Sample 812 | Best value: -4.98 |
+2024-01-16 11:53:07,304 - INFO - Sample 816 | Best value: -4.98 |
+2024-01-16 11:53:07,775 - INFO - Sample 820 | Best value: -4.98 |
+2024-01-16 11:53:08,268 - INFO - Sample 824 | Best value: -4.98 |
+2024-01-16 11:53:08,741 - INFO - Sample 828 | Best value: -4.98 |
+2024-01-16 11:53:10,889 - INFO - Sample 832 | Best value: -4.98 |
+2024-01-16 11:53:11,473 - INFO - Sample 836 | Best value: -4.98 |
+2024-01-16 11:53:11,958 - INFO - Sample 840 | Best value: -4.98 |
+2024-01-16 11:53:12,660 - INFO - Sample 844 | Best value: -4.98 |
+2024-01-16 11:53:13,961 - INFO - Sample 848 | Best value: -4.98 |
+2024-01-16 11:53:16,158 - INFO - Sample 852 | Best value: -4.98 |
+2024-01-16 11:53:16,578 - INFO - Sample 856 | Best value: -4.98 |
+2024-01-16 11:53:17,275 - INFO - Sample 860 | Best value: -4.98 |
+2024-01-16 11:53:18,444 - INFO - Sample 864 | Best value: -4.98 |
+2024-01-16 11:53:19,130 - INFO - Sample 868 | Best value: -4.98 |
+2024-01-16 11:53:19,891 - INFO - Sample 872 | Best value: -4.98 |
+2024-01-16 11:53:20,671 - INFO - Sample 876 | Best value: -4.98 |
+2024-01-16 11:53:21,228 - INFO - Sample 880 | Best value: -4.98 |
+2024-01-16 11:53:26,492 - INFO - Sample 884 | Best value: -4.98 |
+2024-01-16 11:53:27,522 - INFO - Sample 888 | Best value: -4.98 |
+2024-01-16 11:53:29,441 - INFO - Sample 892 | Best value: -4.98 |
+2024-01-16 11:53:29,917 - INFO - Sample 896 | Best value: -4.98 |
+2024-01-16 11:53:30,472 - INFO - Sample 900 | Best value: -4.98 |
+2024-01-16 11:53:34,992 - INFO - Sample 904 | Best value: -4.98 |
+2024-01-16 11:53:35,538 - INFO - Sample 908 | Best value: -4.98 |
+2024-01-16 11:53:36,968 - INFO - Sample 912 | Best value: -4.98 |
+2024-01-16 11:53:37,880 - INFO - Sample 916 | Best value: -4.98 |
+2024-01-16 11:53:40,434 - INFO - Sample 920 | Best value: -4.98 |
+2024-01-16 11:53:41,474 - INFO - Sample 924 | Best value: -4.98 |
+2024-01-16 11:53:41,966 - INFO - Sample 928 | Best value: -4.98 |
+2024-01-16 11:53:42,419 - INFO - Sample 932 | Best value: -4.98 |
+2024-01-16 11:53:44,046 - INFO - Sample 936 | Best value: -4.98 |
+2024-01-16 11:53:44,537 - INFO - Sample 940 | Best value: -4.98 |
+2024-01-16 11:53:46,773 - INFO - Sample 944 | Best value: -4.98 |
+2024-01-16 11:53:47,225 - INFO - Sample 948 | Best value: -4.98 |
+2024-01-16 11:53:47,774 - INFO - Sample 952 | Best value: -4.98 |
+2024-01-16 11:53:48,805 - INFO - Sample 956 | Best value: -4.98 |
+2024-01-16 11:53:49,688 - INFO - Sample 960 | Best value: -4.98 |
+2024-01-16 11:53:50,587 - INFO - Sample 964 | Best value: -4.98 |
+2024-01-16 11:53:52,743 - INFO - Sample 968 | Best value: -4.98 |
+2024-01-16 11:53:53,233 - INFO - Sample 972 | Best value: -4.98 |
+2024-01-16 11:53:53,784 - INFO - Sample 976 | Best value: -4.98 |
+2024-01-16 11:53:58,792 - INFO - Sample 980 | Best value: -4.98 |
+2024-01-16 11:53:59,240 - INFO - Sample 984 | Best value: -4.98 |
+2024-01-16 11:54:00,421 - INFO - Sample 988 | Best value: -4.98 |
+2024-01-16 11:54:01,467 - INFO - Sample 992 | Best value: -4.98 |
+2024-01-16 11:54:01,995 - INFO - Sample 996 | Best value: -4.98 |
+2024-01-16 11:54:02,510 - INFO - Sample 1000 | Best value: -4.98 |
+2024-01-16 11:54:02,510 - INFO - --------------------------------------------------
+2024-01-16 11:54:02,511 - INFO - Best X: tensor([0.5587, 0.5574, 0.5932, 0.6900, 0.5669, 0.5256, 0.6706, 0.5744, 0.5343,
+        0.6829, 0.5204, 0.5932, 0.4910, 0.5538, 0.6894, 0.5067, 0.5336, 0.4838,
+        0.5025, 0.7526], device='cuda:0', dtype=torch.float64)
+2024-01-16 11:54:02,512 - INFO - Best Y: -4.976061939646641
+2024-01-16 11:54:02,512 - INFO - Elapsed time: 533.16 seconds

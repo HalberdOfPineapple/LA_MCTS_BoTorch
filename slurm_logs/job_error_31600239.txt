@@ -1,0 +1,469 @@
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+/ibex/user/liw0d/miniconda3/envs/mcts/lib/python3.10/site-packages/botorch/optim/initializers.py:432: BadInitialCandidatesWarning: Unable to find non-zero acquisition function values - initial conditions are being selected randomly.
+  warnings.warn(
+slurmstepd: error: *** JOB 31600239 ON gpu210-18 CANCELLED AT 2024-01-16T11:41:50 ***

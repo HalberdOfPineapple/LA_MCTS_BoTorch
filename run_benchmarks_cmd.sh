@@ -1,17 +1,8 @@
-#!/bin/bash
-#SBATCH --job-name=botorch_expr
-#SBATCH --output=slurm_logs/job_output_%j.txt
-#SBATCH --error=slurm_logs/job_error_%j.txt
-#SBATCH --time=01:00:00
-#SBATCH --gres=gpu:v100:1
 
 # Activate the conda environment
 source /home/${USER}/.bashrc
 conda activate mcts
 
-# List of python launch.py commands
-# python launch.py -n 200 -e ackley2d -i
-# python LA-MCTS-paper/run.py -f ackley -d 2 -n 200 -s turbo -i
 
 python launch.py -n 1000 -e ackley20d -m gp_ei
 python launch.py -n 1000 -e levy20d -m gp_ei

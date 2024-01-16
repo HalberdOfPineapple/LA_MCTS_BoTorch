@@ -49,8 +49,8 @@ def get_logger():
     assert LOGGER is not None, "[utils.py] the global ogger has not been initialized. Please call init_logger() first."
     return LOGGER
 
-def print_log(msg: str):
-    print(msg)
+def print_log(msg: str, end:str=None):
+    print(msg, end=end)
     global LOGGER
     if LOGGER is not None:
         LOGGER.info(msg)

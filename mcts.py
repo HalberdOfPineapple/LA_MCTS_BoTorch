@@ -225,7 +225,7 @@ class MCTS:
             print_log('Selected Path: ')
             for node in path:
                 print_log(f'Node {node.id} with {node.sample_bag[0].shape[0]} samples ->', end=' ')
-            print_log()
+            print_log('')
             print_log('-' * 30)
 
             cands, cand_vals = self.local_modelling(
