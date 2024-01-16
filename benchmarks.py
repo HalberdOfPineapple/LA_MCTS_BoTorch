@@ -72,7 +72,7 @@ class RosenbrockBenchmark(BaseBenchmark):
         print(f"Using Rosenbrock {self.dim}D")
 
         self.negate: bool = kwargs.get('negate', True)
-        self.lb: float = kwargs.get('lb', -9.)
+        self.lb: float = kwargs.get('lb', -10.)
         self.ub: float = kwargs.get('ub', 10.)
         self.bounds: torch.tensor = torch.tensor([[self.lb] * self.dim, [self.ub] * self.dim]).to(dtype=dtype, device=device)
         self.obj_func = Rosenbrock(
