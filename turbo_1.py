@@ -21,28 +21,12 @@ from gpytorch.likelihoods import GaussianLikelihood
 from gpytorch.mlls import ExactMarginalLogLikelihood
 from gpytorch.priors import HorseshoePrior
 
+from utils import print_log
+
 device = torch.device('cuda' if torch.cuda.is_available() else "cpu")
 dtype = torch.double
 SMOKE_TEST = os.environ.get("SMOKE_TEST")
-
 ACQFS = {"ts", "ei"}
-
-def get_logger(logger_name: str):
-    import logging
-    import os
-
-    # Ensure the logs directory exists
-    logs_dir = './logs'
-    if not os.path.exists(logs_dir):
-        os.makedirs(logs_dir)
-
-    # Setup logging
-    log_filename = os.path.join(logs_dir, f'{logger_name}.log')
-    logging.basicConfig(filename=log_filename, level=logging.INFO, 
-                        format='%(asctime)s - %(levelname)s - %(message)s')
-
-    # Get the logger
-    return logging.getLogger(__name__)
 
 def get_initial_points(dim, n_init, seed=0):
     sobol = SobolEngine(dimension=dim, scramble=True, seed=seed)
@@ -162,14 +146,12 @@ class TuRBO:
     def __init__(
         self, 
         obj_func: Callable, 
-        num_evals: int,
         bounds: torch.Tensor,
         batch_size: int, 
         n_init: int=20, 
         seed: int=0, 
         max_cholesky_size:float=float("inf"),
         acqf_func:str = "ts",
-        logger = None
     ):
         self.obj_func = obj_func
 
@@ -180,7 +162,6 @@ class TuRBO:
 
         self.batch_size = batch_size
         self.n_init = n_init
-        self.num_evals = num_evals
         self.num_calls = 0
 
         self.seed = seed
@@ -189,8 +170,6 @@ class TuRBO:
         if acqf_func not in ACQFS:
             raise ValueError(f"Acquisition function {acqf_func} not supported")
         self.acqf_func = acqf_func
-
-        self.logger = logger
     
     def init_samples(self, num_init: int):
         X_init = get_initial_points(self.dimension, num_init, self.seed)
@@ -201,7 +180,7 @@ class TuRBO:
         self.num_calls += len(X_init)
         return X_init, Y_init
 
-    def optimize(self) -> Tuple[torch.Tensor, torch.Tensor]:
+    def optimize(self, num_evals: int) -> Tuple[torch.Tensor, torch.Tensor]:
         num_restarts = 10 if not SMOKE_TEST else 2
         raw_samples = 512 if not SMOKE_TEST else 4
         n_candidates =  min(5000, max(2000, 200 * self.dimension)) if not SMOKE_TEST else 4
@@ -209,13 +188,13 @@ class TuRBO:
         torch.manual_seed(self.seed)
 
         restart_counter = 0
-        while self.num_calls < self.num_evals:
+        while self.num_calls < num_evals:
             print('-' * 80)
             print(f"Restart {restart_counter}:")
 
-            num_init = min(self.n_init, self.num_evals - self.num_calls)
+            num_init = min(self.n_init, num_evals - self.num_calls)
             X_sampled, Y_sampled = self.init_samples(num_init)
-            if self.num_calls >= self.num_evals: 
+            if self.num_calls >= num_evals: 
                 self.X = torch.cat((self.X, X_sampled), dim=0)
                 self.Y = torch.cat((self.Y, Y_sampled), dim=0)
                 break
@@ -237,7 +216,7 @@ class TuRBO:
 
                 with gpytorch.settings.max_cholesky_size(self.max_cholesky_size):
                     fit_gpytorch_mll(mll)
-                    batch_size = min(self.batch_size, self.num_evals - self.num_calls)
+                    batch_size = min(self.batch_size, num_evals - self.num_calls)
                     X_next = generate_batch(
                         state=state,
                         model=model,
@@ -259,23 +238,21 @@ class TuRBO:
                 Y_sampled = torch.cat((Y_sampled, Y_next), dim=0)
                 self.num_calls += len(X_next)
 
-                log_msg = (
+                print_log(
                     f"[Restart {restart_counter}] {len(self.X) + len(X_sampled)}) "
                     f"Best value: {state.best_value:.2e} | TR length: {state.length:.2e} | "
                     f"num. restarts: {state.failure_counter}/{state.failure_tolerance} | "
                     f"num. successes: {state.success_counter}/{state.success_tolerance}"
                 )
-                print(log_msg)
-                if self.logger is not None:
-                    self.logger.info(log_msg)
-
-                if self.num_calls >= self.num_evals: break
+                if self.num_calls >= num_evals: break
 
             self.X = torch.cat((self.X, X_sampled), dim=0)
             self.Y = torch.cat((self.Y, Y_sampled), dim=0)
             restart_counter += 1
 
-        return self.X, self.Y
+        best_X = self.X[self.Y.argmax(), :]
+        best_Y = self.Y.max()
+        return self.X, self.Y, best_X, best_Y
     
 def test_ackley_20():
     # To minimize the function => maximize its negation
@@ -283,7 +260,6 @@ def test_ackley_20():
     func.bounds[0, :].fill_(-5)
     func.bounds[1, :].fill_(10)
     dim = func.dim
-    lbs, ubs = func.bounds
 
     num_evals = 1000
     batch_size = 4
@@ -293,19 +269,15 @@ def test_ackley_20():
     # from botorch.utils.transforms includes standardize, normalize and unnormalize
     # https://botorch.org/api/_modules/botorch/utils/transforms.html
     # In this function's case, the input X is assumed to be normalized in [0, 1]
-    def eval_objective(x: torch.Tensor):
-        return func(x)
-    
     turbo = TuRBO(
-        obj_func=eval_objective,
+        obj_func=func,
         bounds = func.bounds,
-        num_evals=num_evals,
         dimension=dim,
         batch_size=batch_size,
         n_init=n_init,
         max_cholesky_size=max_cholesky_size,
     )
-    xs, fxs = turbo.optimize()
+    turbo.optimize(num_evals)
 
 
 if __name__ == "__main__": 

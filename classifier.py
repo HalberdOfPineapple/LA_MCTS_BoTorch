@@ -5,7 +5,6 @@ from typing import Dict, List
 
 from sklearn.cluster import KMeans
 from sklearn.svm import SVC
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
 class BaseClassifier:
     @abstractmethod
@@ -18,6 +17,10 @@ class BaseClassifier:
     
     @abstractmethod
     def predict(self, X: torch.Tensor):
+        raise NotImplementedError
+    
+    @abstractmethod
+    def save(self, save_path: str):
         raise NotImplementedError
     
     @property
@@ -91,8 +94,12 @@ class SVMClassifier(BaseClassifier):
         """
         X_scaled = X * (self.bounds[1] - self.bounds[0]) + self.bounds[0]
         return self.svm.predict(X_scaled.detach().cpu().numpy())
-        
 
+    def save(self, save_path: str):
+        import pickle
+        with open(save_path,'wb') as f:
+            pickle.dump(self.classifier.svm, f)
+    
 CLASSIFIER_MAP = {
     'svm': SVMClassifier,
 }

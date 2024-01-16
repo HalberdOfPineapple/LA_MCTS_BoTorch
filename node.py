@@ -52,7 +52,7 @@ class Node:
     def get_UCB(self, Cp: float) -> float:
         if self.parent is None:
             return 0.
-        
+
         exploit_value = torch.mean(self.sample_bag[1]).detach().cpu().item()
         exploration_value = 2. * Cp * \
             math.sqrt(2. * math.log(self.parent.num_visits) / self.num_visits)
@@ -95,9 +95,7 @@ class Node:
     
 
     def save_classifier(self, classifier_save_path: str):
-        import pickle
-        with open(classifier_save_path,'wb') as f:
-            pickle.dump(self.classifier.svm, f)
+        self.classifier.save(classifier_save_path)
 
     def plot_node_region(self, plot_save_path: str):
         labels = self.classifier.predict(self.sample_bag[0])
@@ -139,3 +137,37 @@ class Node:
         plt.savefig(plot_save_path)
         plt.close()
         
+    @staticmethod
+    def path_filter(path: List['Node'], candidates: torch.Tensor) -> np.array:
+        """
+        Args:
+            path: List[Node] - A list of nodes from the root to the current node
+            candidates: torch.Tensor - (num_candidates, dimension)
+
+        Returns:
+            choices: np.array - (num_candidates, ) - A boolean array indicating whether each candidate is accepted
+        """
+        choices: np.array = np.full((candidates.shape[0], ), True)
+        for i in range(len(path) - 1):
+            curr_node: Node = path[i]
+            target_label: int = path[i + 1].label
+
+            labels = curr_node.predict_label(candidates[choices])
+            choices[choices] = labels == target_label
+
+            if choices.sum() == 0:
+                break
+
+        return choices
+
+    @staticmethod
+    def check_path(path: List['Node']):
+        leaf: Node = path[-1]
+        leaf_X: torch.Tensor = leaf.sample_bag[0]
+
+        in_regions = Node.path_filter(path, leaf_X)
+        num_in_regions = in_regions.sum()
+
+        print('-' * 20)
+        print(f"[Node.check_path] {num_in_regions} / {leaf_X.shape[0]} samples of the leaf node {leaf.id}"
+            f" are in the region of the leaf node {leaf.id} with label {leaf.label}")

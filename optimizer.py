@@ -23,13 +23,7 @@ from gpytorch.likelihoods import GaussianLikelihood
 from gpytorch.mlls import ExactMarginalLogLikelihood
 
 from node import Node
-from utils import get_logger, path_filter
-logger = None
-
-def print_log(msg: str):
-    print(msg)
-    if logger: logger.info(msg)
-
+from utils import get_logger, print_log
 
 def contrained_acqf(
         acqf: botorch.acquisition.AcquisitionFunction, 
@@ -38,7 +32,7 @@ def contrained_acqf(
     ) -> torch.Tensor:
         results = torch.full((X.shape[0], ), float('-inf'), dtype=X.dtype, device=X.device)
 
-        choices = path_filter(path, X) # (batch_size, )
+        choices = Node.path_filter(path, X) # (batch_size, )
         results[choices] = acqf(X[choices])
 
         return results
@@ -47,8 +41,6 @@ class BaseOptimizer:
     @abstractmethod
     def optimize(self, X_in_region: torch.Tensor, Y_in_region: torch.Tensor, num_evals: int, path: List[Node]) -> Tuple[torch.Tensor, torch.Tensor]:
         raise NotImplementedError
-
-            
 
 # ================================================================
 # TuRBO
@@ -166,8 +158,8 @@ class TuRBO(BaseOptimizer):
             bouning_box_ubs = torch.clamp(region_center + bounding_box_length / 2 * weights, 0.0, 1.0)
 
             sobol_cands = sobol_samples * (bouning_box_ubs - bouning_box_lbs) + bouning_box_lbs
-            in_region = path_filter(path, sobol_cands) # (num_in_region_samples, )
-            
+            in_region = Node.path_filter(path, sobol_cands) # (num_in_region_samples, )
+
             X_init = torch.cat((X_init, sobol_cands[in_region]), dim=0)
             if X_init.shape[0] < num_samples:
                 bounding_box_length *= 2
@@ -308,6 +300,5 @@ class TuRBO(BaseOptimizer):
         return X_sampled, Y_sampled
 
 OPTIMIZER_MAP = {
-    # 'bo': BOOptimizer,
     'turbo': TuRBO,
 }

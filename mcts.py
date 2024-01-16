@@ -1,17 +1,13 @@
 import os 
 import torch
-import numpy as np
 from torch.quasirandom import SobolEngine
 
 from node import Node
 from typing import Callable, List, Dict, Tuple 
 from optimizer import OPTIMIZER_MAP, BaseOptimizer
-from classifier import CLASSIFIER_MAP
 
 from botorch.utils.transforms import unnormalize
-from utils import get_logger, check_path, get_expr_name, PATH_DIR
-
-logger = None
+from utils import get_expr_name, PATH_DIR, print_log
 
 class MCTS:
     def __init__(
@@ -30,8 +26,6 @@ class MCTS:
         initial_sampling_method: str = 'Sobol',
         save_path: bool=False,
     ):
-        global logger
-        logger = get_logger()
 
         self.seed = seed
         torch.manual_seed(self.seed)
@@ -154,7 +148,7 @@ class MCTS:
                     if neg_child.num_visits >= self.leaf_size:
                         nodes_splittable.append(neg_child)
     
-                print(f'[MCTS] Build Tree: Split onto {pos_data[0].shape[0]} positive samples (node: {pos_child.id})'
+                print_log(f'[MCTS] Build Tree: Split onto {pos_data[0].shape[0]} positive samples (node: {pos_child.id})'
                       f' and {neg_data[0].shape[0]} negative samples (node: {neg_child.id})'
                       f' where pos label is {pos_label}')
 
@@ -171,14 +165,14 @@ class MCTS:
 
         svm_save_dir = os.path.join(PATH_DIR, get_expr_name())
         if not os.path.exists(svm_save_dir): os.makedirs(svm_save_dir)
-        # for i in range(len(path) - 1):
-        #     node, child = path[i], path[i+1]
-        #     pkl_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.pkl')
-        #     node.save_classifier(pkl_path)
+        for i in range(len(path) - 1):
+            node, child = path[i], path[i+1]
+            pkl_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.pkl')
+            node.save_classifier(pkl_path)
 
-        #     label_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.txt')
-        #     with open(label_path, 'w') as f:
-        #         f.write(f'{child.label}')
+            label_path: str = os.path.join(svm_save_dir, f'{self.num_calls}_{node.id}_.txt')
+            with open(label_path, 'w') as f:
+                f.write(f'{child.label}')
 
         last_parent: Node = path[-2]
         plot_path = os.path.join(svm_save_dir, f'{self.num_calls}_{last_parent.id}_.png')
@@ -193,7 +187,7 @@ class MCTS:
                             key=lambda node: self.get_node_score(node))
             path.append(curr_node)
         
-        check_path(path)
+        Node.check_path(path)
         if self.save_path:
             self.save_path_info(path)
         return path
@@ -219,27 +213,27 @@ class MCTS:
             num_evals=num_evals, 
             path=path,
         )
-    
+
     def optimize(self, num_evals: int) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor]:
         while self.num_calls < num_evals:
-            print('-' * 60)
-            print(f'[MCTS] optimize: Building tree from call: {self.num_calls}')
+            print_log('-' * 60)
+            print_log(f'[MCTS] optimize: Building tree from call: {self.num_calls}')
             self.build_tree()
-            print('-' * 30)
+            print_log('-' * 30)
 
             path: List['Node'] = self.select()
-            print('Selected Path: ')
+            print_log('Selected Path: ')
             for node in path:
-                print(f'Node {node.id} with {node.sample_bag[0].shape[0]} samples ->', end=' ')
-            print()
-            print('-' * 30)
+                print_log(f'Node {node.id} with {node.sample_bag[0].shape[0]} samples ->', end=' ')
+            print_log()
+            print_log('-' * 30)
 
             cands, cand_vals = self.local_modelling(
-                num_evals=num_evals - self.num_calls, # note that global batch size is not the same as the local batch size
+                num_evals=num_evals - self.num_calls,
                 path=path, 
                 bounds=self.bounds
             )
-            print('-' * 30)
+            print_log('-' * 30)
 
             self.X = torch.cat([self.X, cands], dim=0)
             self.Y = torch.cat([self.Y, cand_vals], dim=0)
@@ -249,7 +243,7 @@ class MCTS:
                 self.best_X = cands[cand_vals.argmax()]
                 self.best_Y = cand_vals.max()
 
-            print(f'[MCTS] optimize: Best value found: {self.best_Y:.3f} after {self.num_calls} calls')
-            print('-' * 60)
+            print_log(f'[MCTS] optimize: Best value found: {self.best_Y:.3f} after {self.num_calls} calls')
+            print_log('-' * 60)
 
         return self.X, self.Y, self.best_X, self.best_Y

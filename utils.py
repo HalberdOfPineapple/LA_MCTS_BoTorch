@@ -54,37 +54,3 @@ def print_log(msg: str):
     global LOGGER
     if LOGGER is not None:
         LOGGER.info(msg)
-
-def path_filter(path: List[Node], candidates: torch.Tensor) -> np.array:
-    """
-    Args:
-        path: List[Node] - A list of nodes from the root to the current node
-        candidates: torch.Tensor - (num_candidates, dimension)
-
-    Returns:
-        choices: np.array - (num_candidates, ) - A boolean array indicating whether each candidate is accepted
-    """
-    choices: np.array = np.full((candidates.shape[0], ), True)
-    for i in range(len(path) - 1):
-        curr_node: Node = path[i]
-        target_label: int = path[i + 1].label
-
-        labels = curr_node.predict_label(candidates[choices])
-        choices[choices] = labels == target_label
-        # choices[choices] = labels == (1 - target_label)
-
-        if choices.sum() == 0:
-            break
-
-    return choices
-
-def check_path(path: List[Node]):
-    leaf: Node = path[-1]
-    leaf_X: torch.Tensor = leaf.sample_bag[0]
-
-    in_regions = path_filter(path, leaf_X)
-    num_in_regions = in_regions.sum()
-
-    print('-' * 20)
-    print(f"[utils.check_path] {num_in_regions} / {leaf_X.shape[0]} samples of the leaf node {leaf.id}"
-          f" are in the region of the leaf node {leaf.id} with label {leaf.label}")
